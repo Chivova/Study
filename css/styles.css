@@ -228,6 +228,9 @@ body {
 
 /* logo footer */
 .logo .logo-footer-one {
+  display: inline-block;
+  padding-top: 60px;
+  margin-bottom: 20px;
   color: var(--accent-color);
 
   font-family: Raleway;
@@ -281,6 +284,12 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: solid 2px;
+}
+
+.footer-devolped {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Button */
@@ -371,7 +380,7 @@ body {
 
 .section .section-subparagraph {
   margin-top: 0;
-  margin-bottom: 83px;
+  margin-bottom: 0;
 
   color: var(--white-text-color);
 
