@@ -1,0 +1,382 @@
+/* Основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* белый #FFFFFF */
+/* акцент #2196F3  */
+/* текст контактов в футере rgba(255, 255, 255, 0.6)*/
+/* самый нижний текст подвала rgba(255, 255, 255, 0.4) */
+/* основной цвет фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA */
+/* шапка #FFFFFF*/
+/* подвал #2F303A */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --footer-contact-text: rgba(255, 255, 255, 0.6);
+  --primary-background-color: tomato;
+  --secondary-background-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Page Header */
+.page-header {
+  background-color: #fff;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: solid 2px;
+}
+
+/* Logo header*/
+.name-logo {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.logo {
+ 
+  text-decoration: none;
+}
+
+.logo .logo-header-one {
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 26px;
+  
+
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo .logo-header-two {
+
+  color: var(--title-text-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/* site nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.link {
+  text-decoration: none;
+}
+/* auth  */
+
+}
+.auth .contact:hover,
+.auth .contact:focus {
+  color: var(--accent-color);
+}
+
+.auth .contact {
+ 
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* hero */
+
+.hero {
+  margin-top: 3px;
+  margin-bottom: 7px;
+  text-align: center;
+  outline: 2px solid;
+}
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  color: var(--white-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+/* first section */
+
+.section-title {
+ padding-top: 94px;
+ margin-top: 0;
+  margin-bottom: 50px; 
+
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.section p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--white-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
+/* Our Team */
+
+.section .name-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
+
+.section .job-position {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.team .team-link:hover,
+.team .team-link:focus {
+  color: var(--accent-color);
+}
+
+/* Our Partners */
+
+.partners .partners-link:hover,
+.partners .partners-link:focus {
+  background-color: var(--accent-color);
+}
+
+/* logo footer */
+.logo .logo-footer-one {
+  color: var(--accent-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo .logo-footer-two {
+  color: var(--white-text-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.adress-street {
+  margin-bottom: 9px;
+  color: var(--white-text-color);
+}
+
+.adress .adress-mail {
+  margin-bottom: 9px;
+  color: var(--footer-contact-text);
+}
+
+.adress .adress-phone {
+  color: var(--footer-contact-text);
+}
+.folowus-tittle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--white-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.folowus .folowus-link:hover,
+.folowus .folowus-link:focus {
+  color: var(--accent-color);
+}
+.footer {
+  background-color: var(--footer-bg-color);
+}
+.footer-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Button */
+.button {
+  display: inline-flexbox;
+  min-width: 136px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: var(--white-text-color);
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  /* font-size: inherit; */
+}
+
+.button.primary-button {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+/* Portfolio page */
+.filter {
+  color: var(--title-text-color);
+}
+
+/* portfolio-button */
+.portfolio-button {
+  background-color: var(--secondary-background-color);
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.portfolio-button.filter-button:hover,
+.portfolio-button.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.container .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.project-img {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.section .section-projects {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.section .section-paragraph {
+  margin-top: 0;
+  padding-bottom: 20px;
+
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.section .section-subparagraph {
+  margin-top: 0;
+  margin-bottom: 83px;
+
+  color: var(--white-text-color);
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.section .list .list
+{
+  padding-top: 94px;
+}
+/* 1. Почему normalize перебивает body???? 
+   2.Отсупы в команде от картинки к имени
+   3.Отступы в портфолио от шапки к кнопокам
+*/
+
