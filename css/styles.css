@@ -195,7 +195,7 @@ body {
 /* Our Team */
 
 .section .name-title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -304,11 +304,14 @@ body {
 }
 
 .button.primary-button {
+  
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
 /* Portfolio page */
 .filter {
+  padding-top: 93px;
+  
   color: var(--title-text-color);
 }
 
@@ -330,10 +333,15 @@ body {
 }
 
 .container .title {
+  
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
 }
+
+.work-examples {
+  padding-top: 50px;
+} 
 
 .project-img {
   margin-top: 0;
@@ -376,7 +384,6 @@ body {
   padding-top: 94px;
 }
 /* 1. Почему normalize перебивает body???? 
-   2.Отсупы в команде от картинки к имени
    3.Отступы в портфолио от шапки к кнопокам
 */
 
