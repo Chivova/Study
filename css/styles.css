@@ -188,12 +188,14 @@ body {
 
 .container .flex-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .flex-element {
   width: 270px;
 }
-
+.flex-element + .flex-element {
+  margin-left: 30px;
+}
 .section-title {
   padding-top: 94px;
   margin-top: 0;
