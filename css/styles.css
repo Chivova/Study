@@ -39,10 +39,15 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Utilities */
 .list {
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+  margin: 0;
   list-style: none;
+  text-decoration: none;
+}
+.link {
   text-decoration: none;
 }
 
@@ -60,14 +65,22 @@ body {
   outline: solid 2px;
 }
 
-/* Logo header*/
-.name-logo {
-  margin-top: 0;
-  margin-bottom: 0;
+.nav {
+  display: flex;
+  align-items: center;
+}
+/* ?????????? Не работает Flex?????????? */
+.main-container {
+  display: flex;
+  align-items: center;
 }
 
+/* .name-logo {
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+
 .logo {
- 
   text-decoration: none;
 }
 
@@ -75,7 +88,6 @@ body {
   display: inline-block;
   margin-top: 24px;
   margin-bottom: 26px;
-  
 
   color: var(--accent-color);
 
@@ -86,6 +98,9 @@ body {
 }
 
 .logo .logo-header-two {
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 26px;
 
   color: var(--title-text-color);
 
@@ -95,10 +110,21 @@ body {
   line-height: 1.19;
 }
 /* site nav */
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 
 .site-nav .link {
-  color: var(--title-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -113,11 +139,21 @@ body {
   color: var(--accent-color);
 }
 
-.link {
-  text-decoration: none;
-}
 /* auth  */
 
+.auth {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth .item + .item {
+  margin-left: 50px;
+}
+
+.auth .contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .auth .contact:hover,
 .auth .contact:focus {
@@ -125,13 +161,13 @@ body {
 }
 
 .auth .contact {
- 
   color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* hero */
@@ -156,10 +192,9 @@ body {
 /* first section */
 
 .section-title {
- padding-top: 94px;
- margin-top: 0;
- margin-bottom: 50px; 
-
+  padding-top: 94px;
+  margin-top: 0;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
 
@@ -288,7 +323,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   outline: solid 2px;
-  
 }
 
 .footer-devolped {
@@ -299,6 +333,7 @@ body {
 /* Button */
 .button {
   display: inline-flexbox;
+  /* border: 1px solid transparent; */
   min-width: 136px;
   padding: 10px 32px;
   border-radius: 4px;
@@ -310,21 +345,21 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   letter-spacing: 0.06em;
   text-decoration: none;
+  text-align: center;
+
   /* font-size: inherit; */
 }
 
 .button.primary-button {
-  
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
 /* Portfolio page */
 .filter {
   padding-top: 93px;
-  
+
   color: var(--title-text-color);
 }
 
@@ -346,7 +381,6 @@ body {
 }
 
 .container .title {
-  
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -354,7 +388,7 @@ body {
 
 .work-examples {
   padding-top: 50px;
-} 
+}
 
 .project-img {
   margin-top: 0;
@@ -392,11 +426,9 @@ body {
   line-height: 1.6;
 }
 
-.section .list .list
-{
+.section .list .list {
   padding-top: 94px;
 }
 /* 1. Почему normalize перебивает body???? 
    3.Отступы в портфолио от шапки к кнопокам
 */
-
