@@ -57,7 +57,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -69,16 +69,11 @@ body {
   display: flex;
   align-items: center;
 }
-/* ?????????? Не работает Flex?????????? */
+
 .main-container {
   display: flex;
   align-items: center;
 }
-
-/* .name-logo {
-  margin-top: 0;
-  margin-bottom: 0;
-} */
 
 .logo {
   text-decoration: none;
@@ -191,6 +186,14 @@ body {
 }
 /* first section */
 
+.container .flex-container {
+  display: flex;
+  align-items: center;
+}
+.flex-element {
+  width: 270px;
+}
+
 .section-title {
   padding-top: 94px;
   margin-top: 0;
@@ -265,45 +268,68 @@ body {
 }
 
 /* logo footer */
-.logo .logo-footer-one {
+.address .logo-footer-one {
   display: inline-block;
   padding-top: 60px;
   margin-bottom: 20px;
+
   color: var(--accent-color);
-
   font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.mail-prh {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.phone-prh {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+}
+.address .logo-footer-two {
+  display: inline-block;
+  padding-top: 60px;
+  margin-bottom: 20px;
+
+  color: var(--white-text-color);
+  font-family: Raleway;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.logo .logo-footer-two {
-  color: var(--white-text-color);
-
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.adress-street {
+.address .address-street {
+  margin-top: 0;
   margin-bottom: 9px;
+
   color: var(--white-text-color);
+  font-style: normal;
 }
 
-.adress .adress-mail {
+.address .address-mail {
+  margin-top: 0;
   margin-bottom: 9px;
+
   color: var(--footer-contact-text);
+  font-style: normal;
 }
 
-.adress .adress-phone {
+.address .address-phone {
+  margin-top: 0;
+  padding-bottom: 60px;
   color: var(--footer-contact-text);
+  font-style: normal;
 }
+
 .folowus-tittle {
   margin-top: 0;
   margin-bottom: 20px;
-  color: var(--white-text-color);
 
+  color: var(--white-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -348,8 +374,6 @@ body {
   letter-spacing: 0.06em;
   text-decoration: none;
   text-align: center;
-
-  /* font-size: inherit; */
 }
 
 .button.primary-button {
@@ -429,6 +453,5 @@ body {
 .section .list .list {
   padding-top: 94px;
 }
-/* 1. Почему normalize перебивает body???? 
-   3.Отступы в портфолио от шапки к кнопокам
-*/
+
+/* 3.Отступы в портфолио от шапки к кнопокам */

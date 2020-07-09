@@ -68,35 +68,46 @@
       <!-- Посмотреть на видео почему ТУТ не список ??????? -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Почему стоит выбрать нас</h2>
-          <img src="./Photo/Locator.png" alt="" />
-          <h3 class="section-subtitle">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+          <h2 class="title">Почему стоит выбрать нас</h2>
+            <ul class="flex-container list">
+              <li class="flex-element">
+                <img src="./Photo/Locator.png" alt="" />
+                <h3 class="section-subtitle">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
 
-          <p>
-            Идейные соображения, а также начало повседневной работы по
-            формированию позиции.
-          </p>
-          <img src="./Photo/clock.png" alt="" />
-          <h3 class="section-subtitle">ПУНКТУАЛЬНОСТЬ</h3>
+                <p>
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+              <li class="flex-element">
+                <img src="./Photo/clock.png" alt="" />
+                <h3 class="section-subtitle">ПУНКТУАЛЬНОСТЬ</h3>
 
-          <p>
-            Задача организации, в особенности же рамки и место обучения кадров
-            влечет за собой.
-          </p>
-          <img src="./Photo/diagram.png" alt="" />
-          <h3 class="section-subtitle">ПЛАНИРОВАНИЕ</h3>
+                <p>
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </li>
+              <li class="flex-element ">
+                <img src="./Photo/diagram.png" alt="" />
+                <h3 class="section-subtitle">ПЛАНИРОВАНИЕ</h3>
 
-          <p>
-            Равным образом консультация с широким активом в значительной степени
-            обуславливает.
-          </p>
-          <img src="./Photo/astronaut.png" alt="" />
-          <h3 class="section-subtitle">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                <p>
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+              <li class="flex-element ">
+                <img src="./Photo/astronaut.png" alt="" />
+                <h3 class="section-subtitle">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
 
-          <p>
-            Значимость этих проблем настолько очевидна, что реализация плановых
-            заданий.
-          </p>
+                <p>
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!--Чем мы занимаемся-->
@@ -128,7 +139,7 @@
               <img src="./Photo/Designer.jpeg" alt="Продукт Дизайнер" />
               <h4 class="name-title">Джон Смит</h4>
               <p class="job-position">Продукт Дизайнер</p>
-              <ul class="team list">
+              <ul class="list">
                 <!-- ???????????????? -->
                 <li>
                   <a class="team-link" href="" aria-label="Сыылка на Instagram">
@@ -286,29 +297,28 @@
       <!--Как делать адресс-->
       <!-- Logo in Footer -->
       <div class="footer-container">
-        <div class="logo">
-          <a href="./index.html"></a>
+        <address class="address">
+          <a href="./index.html" class="logo"></a>
           <span class="logo-footer-one">Web </span>
           <span class="logo-footer-two">Studio</span>
-        </div>
-        <address class="adress-street">
-          г.Киев, пр-т Леси Украинки, 26
-        </address>
-        <address class="adress">
-          <!-- ?????????? отступы??????? -->
-          <a class="adress-mail link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </address>
-        <address class="adress">
-          <a class="adress-phone link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
+          <p class="address-street">г.Киев, пр-т Леси Украинки, 26</p>
+          <p class="mail-prh">
+            <a class="address-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </p>
+          <p class="phone-prh">
+            <a class="address-phone link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </p>
         </address>
 
         <!--почему div на видео 2 43:00-->
         <div class="folowus list">
-          <h3 class="folowus-tittle"><b>ПРИСОЕДИНЯЙТЕСЬ</b></h3>
+          <div class="folowus-tittle">
+            <b>ПРИСОЕДИНЯЙТЕСЬ</b>
+          </div>
           <ul class="list">
             <li>
               <a class="folowus-link" href="" aria-label="Сыылка на Instagram">
@@ -333,7 +343,9 @@
           </ul>
         </div>
         <div>
-          <h3 class="folowus-tittle"><b>Подпишитесь на россылку</b></h3>
+          <div class="folowus-tittle">
+            <b>Подпишитесь на россылку</b>
+          </div>
           <a href="" class="button primary-button">Присоединяйтесь</a>
         </div>
         <p class="footer-devolped">&copy; 2020 | Developed by</p>
@@ -343,3 +355,5 @@
 </html>
 
 <!--Посмотреть про prettierrc.json-->
+
+<!-- Переделать весь футер -->
