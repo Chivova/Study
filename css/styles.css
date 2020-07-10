@@ -66,6 +66,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   outline: solid 2px;
+  background-color: teal;
 }
 
 .nav {
@@ -193,10 +194,10 @@ body {
   display: flex;
   justify-content: center;
 }
-.flex-element {
+.flex-choose {
   width: 270px;
 }
-.flex-element + .flex-element {
+.flex-choose + .flex-choose {
   margin-left: 30px;
 }
 .section-title {
@@ -220,21 +221,44 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
+
+/* Чем мы занимаемся */
+
+.flex-element {
+  width: 370px;
+}
+
+.flex-element + .flex-element {
+  margin-left: 30px;
+}
+
 .section p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.list-title {
+.section .subtitle {
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--white-text-color);
 
+  color: var(--white-text-color);
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
 }
+
 /* Our Team */
+
+.flex-team {
+  width: 270px;
+}
+.flex-team + .flex-team {
+  margin-left: 30px;
+}
+
+.flex-link + .flex-link {
+  margin-left: 10px;
+}
 .team-section {
   background-color: var(--secondary-background-color);
 }
@@ -259,15 +283,23 @@ body {
   text-align: center;
 }
 
-.team .team-link:hover,
-.team .team-link:focus {
+.team-section .team-link:hover,
+.team-section .team-link:focus {
   color: var(--accent-color);
 }
 
 /* Our Partners */
 
-.partners .partners-link:hover,
-.partners .partners-link:focus {
+.flex-partners {
+  width: 170px;
+}
+
+.flex-partners + .flex-partners {
+  margin-left: 30px;
+}
+
+.partners-section .partners-link:hover,
+.partners-section .partners-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -378,11 +410,20 @@ body {
   color: var(--white-text-color);
 }
 /* Portfolio page */
-.filter {
+
+.flex-filter + .flex-filter {
+  margin-left: 8px;
+}
+
+.section-filter {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+/* .filter {
   padding-top: 93px;
 
   color: var(--title-text-color);
-}
+} */
 
 /* portfolio-button */
 .portfolio-button {
@@ -401,21 +442,38 @@ body {
   color: var(--white-text-color);
 }
 
-.container .title {
+.flex-examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-project {
+  width: calc((100% - 8 * 30px) / 9);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flex-project:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.flex-project:nth-child(-n + 3n) {
+  margin-bottom: 0;
+}
+
+.section-examples .title,
+.section-filter .title {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  display: none;
 }
 
-.work-examples {
-  padding-top: 50px;
-}
-
-.project-img {
+.section-examples {
   margin-top: 0;
-  margin-bottom: 20px;
 }
-.section .section-projects {
+
+.section-examples .section-projects {
   margin-top: 0;
   margin-bottom: 4px;
 
@@ -427,7 +485,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.section .section-paragraph {
+.section-examples .section-paragraph {
   margin-top: 0;
   padding-bottom: 20px;
 
@@ -437,9 +495,10 @@ body {
   line-height: 1.9;
 }
 
-.section .section-subparagraph {
+.section-examples .section-subparagraph {
   margin-top: 0;
   margin-bottom: 0;
+  display: none;
 
   color: var(--white-text-color);
 
