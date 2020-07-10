@@ -50,7 +50,10 @@ body {
 .link {
   text-decoration: none;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Page Header */
 .page-header {
   background-color: #fff;
@@ -197,7 +200,6 @@ body {
   margin-left: 30px;
 }
 .section-title {
-  padding-top: 94px;
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -269,10 +271,16 @@ body {
   background-color: var(--accent-color);
 }
 
-/* logo footer */
+/* Footer */
+
+.address {
+  padding-top: 60px;
+  margin-bottom: 60px;
+  font-style: normal;
+}
 .address .logo-footer-one {
   display: inline-block;
-  padding-top: 60px;
+
   margin-bottom: 20px;
 
   color: var(--accent-color);
@@ -282,23 +290,14 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-.mail-prh {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.phone-prh {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 60px;
-}
+
 .address .logo-footer-two {
   display: inline-block;
-  padding-top: 60px;
+
   margin-bottom: 20px;
 
   color: var(--white-text-color);
   font-family: Raleway;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -309,7 +308,6 @@ body {
   margin-bottom: 9px;
 
   color: var(--white-text-color);
-  font-style: normal;
 }
 
 .address .address-mail {
@@ -317,14 +315,11 @@ body {
   margin-bottom: 9px;
 
   color: var(--footer-contact-text);
-  font-style: normal;
 }
 
 .address .address-phone {
-  margin-top: 0;
-  padding-bottom: 60px;
+  /* margin-top: 0; */
   color: var(--footer-contact-text);
-  font-style: normal;
 }
 
 .folowus-tittle {
@@ -345,7 +340,7 @@ body {
   background-color: var(--footer-bg-color);
 }
 .footer-container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -452,8 +447,8 @@ body {
   line-height: 1.6;
 }
 
-.section .list .list {
+/* .team-section .list .list {
   padding-top: 94px;
-}
+} */
 
 /* 3.Отступы в портфолио от шапки к кнопокам */
