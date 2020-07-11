@@ -59,6 +59,7 @@ body {
 /* Page Header */
 .page-header {
   background-color: #fff;
+  border: 1px solid #ececec;
 }
 
 .container {
