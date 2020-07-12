@@ -82,35 +82,25 @@ body {
   align-items: center;
 }
 
-.logo {
-  text-decoration: none;
-}
+/* Доделать отсьупы в лого ???????? */
 
-.logo .logo-header-one {
-  display: inline-block;
+.logo {
+  display: block;
   margin-top: 24px;
   margin-bottom: 26px;
 
   color: var(--accent-color);
-
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 
-.logo .logo-header-two {
-  display: inline-block;
-  margin-top: 24px;
-  margin-bottom: 26px;
-
+.logo .logo-accent {
   color: var(--title-text-color);
-
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
+
 /* site nav */
 .site-nav {
   display: flex;
@@ -336,32 +326,17 @@ body {
   justify-content: space-between;
 }
 
+/* Footer logo */
+
+.logo.inverse .logo-accent {
+  color: var(--white-text-color);
+}
+
+/* Адрес */
 .address {
   padding-top: 60px;
   margin-bottom: 60px;
   font-style: normal;
-}
-.address .logo-footer-one {
-  display: inline-block;
-  margin-bottom: 20px;
-
-  color: var(--accent-color);
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.address .logo-footer-two {
-  display: inline-block;
-  margin-bottom: 20px;
-
-  color: var(--white-text-color);
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .address .address-street {
@@ -388,6 +363,7 @@ body {
 }
 
 .followus-tittle {
+  display: block;
   margin-top: 0;
   margin-bottom: 20px;
 
