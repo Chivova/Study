@@ -44,7 +44,6 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
-  
 }
 .link {
   display: block;
@@ -52,6 +51,29 @@ body {
 
   color: var(--title-text-color);
 }
+
+/* Как скрыть заголовок */
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Для скрытия заголовка не подходит */
+/* .section .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  display: none;
+} */
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -74,14 +96,12 @@ body {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .main-container {
   display: flex;
   align-items: center;
 }
-
 
 .logo {
   display: block;
@@ -163,15 +183,39 @@ body {
 
 /* hero */
 
-.hero {
-  text-align: center;
-  /* outline: 2px solid; */
+/* .hero-container {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../Photo/Header.png);
 
-  background-color: var(--primary-text-color);
+  background-color: var(--footer-bg-color);
+} */
+
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../Photo/Header.png);
+
+  background-color: var(--footer-bg-color);
+  text-align: center;
 }
+
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
+  padding-top: 200px;
 
   color: var(--white-text-color);
 
@@ -180,19 +224,26 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06em;
 }
+
 /* first section */
 
 .flex-container {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
+
 .flex-choose {
   width: 270px;
 }
+
 .flex-choose + .flex-choose {
   margin-left: 30px;
 }
+
+.choose-img {
+  margin-bottom: 30px;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -205,9 +256,9 @@ body {
   text-align: center;
 }
 .section-subtitle {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
-  
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -246,13 +297,36 @@ body {
 .flex-team {
   width: 270px;
 }
-.flex-team + .flex-team {
+
+/* .flex-team + .flex-team {
   margin-left: 30px;
+} */
+
+/* Не получаеться, посмотреть видео */
+.flex-container .flex-team:not(:last-child) {
+  margin-right: 30px;
 }
 
 .flex-link + .flex-link {
   margin-left: 10px;
 }
+
+/* .card-team {
+  width: 270px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  background-color: var(--primary-background-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  border-left: 1px solid  #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+} */
+
 .team-section {
   background-color: var(--secondary-background-color);
 }
@@ -265,8 +339,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.img-item {
+  padding-bottom: 30px;
+}
 .team-section .name-title {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -323,8 +400,9 @@ body {
 .flex-footer {
   display: flex;
   align-items: baseline;
-  /* justify-content: space-between; */ ?????
+  /* justify-content: space-between;  ????? */
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* Footer logo */
@@ -389,7 +467,7 @@ body {
 
 /* Button */
 .button {
-  display: inline-flexbox;
+  display: inline-block;
   /* border: 1px solid transparent; */
   min-width: 136px;
   padding: 10px 32px;
@@ -425,7 +503,6 @@ body {
 /* portfolio-button */
 
 .portfolio-button {
-  
   background-color: var(--secondary-background-color);
   color: var(--title-text-color);
   font-weight: 500;
@@ -448,7 +525,7 @@ body {
 }
 
 /* calc ((100% кол-во маржинов в строке * значение маржина) /  кол-во элементов в строке*/
-.flex-project  {
+.flex-project {
   width: calc((100% - 60px) / 3);
   /* или width: 370px; */
   margin-right: 30px;
@@ -456,12 +533,12 @@ body {
 
   background: var(--primary-background-color);
 }
-  
-  .flex-project :hover,
-  .flex-project:focus {
+
+.flex-project :hover,
+.flex-project:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
-} 
+}
 
 .flex-project:nth-child(3n) {
   margin-right: 0px;
@@ -480,29 +557,20 @@ body {
   width: 370px;
 }
 
- .flex-project .card-content {
+.flex-project .card-content {
   padding: 20px 24px;
-  
-  background-color: var(--primary-background-color); 
+  width: 370px;
+
+  background-color: var(--primary-background-color);
   border-left: 1px solid#eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid#eeeeee;
-  
-  
- 
-}
-
-.section .title {
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
-  display: none;
 }
 
 .section .section-projects {
   margin-top: 0;
   margin-bottom: 4px;
-   
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -532,4 +600,4 @@ body {
   line-height: 1.6;
 }
 
-/* 3.Отступы в портфолио от шапки к кнопокам */
+/* не рабатоет паадинг в заголовках, не переноситься на новую строку */
