@@ -162,11 +162,33 @@ body {
   margin-left: 50px;
 }
 
-.auth .contact {
-  display: block;
+/* ???????????????????????????????????? */
+.contact::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  outline: 1px solid red;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-mail {
+  background-image: url(../Photo/mail.svg);
+}
+
+.icon-mobile {
+  background-image: url(../Photo/mobile.svg);
+}
+
+.auth {
+  /* display: block; */
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .auth .contact:hover,
 .auth .contact:focus {
   color: var(--accent-color);
@@ -208,7 +230,7 @@ body {
     ),
     url(../Photo/Header.png);
 
-  background-color: var(--footer-bg-color);
+  background-color: #2f303a;
   text-align: center;
 }
 
@@ -225,23 +247,65 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* first section */
+/* section  features (choose) */
 
 .flex-container {
   display: flex;
   justify-content: center;
 }
 
-.flex-choose {
+.flex-features {
   width: 270px;
 }
 
-.flex-choose + .flex-choose {
+.flex-features + .flex-features {
   margin-left: 30px;
 }
 
-.choose-img {
+.flex-features::before {
+  content: '';
+  display: block;
   margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: var(--secondary-background-color);
+}
+
+/* Можно сделать так или через доп класс */
+
+/* .flex-choose:nth-child(1)::before {
+  background-image: url(../Photo/Locator.png);
+}
+
+.flex-choose:nth-child(2)::before {
+  background-image: url(../Photo/clock.png);
+}
+
+.flex-choose:nth-child(3)::before {
+  background-image: url(../Photo/diagram.png);
+}
+
+.flex-choose:nth-child(4)::before {
+  background-image: url(../Photo/astronaut.png);
+} */
+
+.icon-locator::before {
+  background-image: url(../Photo/locator.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../Photo/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../Photo/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../Photo/astronaut.svg);
 }
 
 .section-title {
@@ -362,25 +426,81 @@ body {
   text-align: center;
 }
 
-.team-section .team-link:hover,
+.team-link {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 44px;
+  /* outline: 1px solid red; */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-instagram {
+  background-image: url(../Photo/instagram.svg);
+}
+
+.icon-twitter {
+  background-image: url(../Photo/twitter.svg);
+}
+
+.icon-facebook {
+  background-image: url(../Photo/facebook.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../Photo/linkedin.svg);
+}
+
+/* .team-section .team-link:hover,
 .team-section .team-link:focus {
   color: var(--accent-color);
-}
+} */
 
 /* Our Partners */
 
 .flex-partners {
+  content: '';
   width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .flex-partners + .flex-partners {
   margin-left: 30px;
 }
 
-.partners-section .partners-link:hover,
+.icon-clients1 {
+  background-image: url(../Photo/ourclients/logo1.svg);
+}
+
+.icon-clients2 {
+  background-image: url(../Photo/ourclients/logo2.svg);
+}
+
+.icon-clients3 {
+  background-image: url(../Photo/ourclients/logo3.svg);
+}
+
+.icon-clients4 {
+  background-image: url(../Photo/ourclients/logo4.svg);
+}
+
+.icon-clients5 {
+  background-image: url(../Photo/ourclients/logo5.svg);
+}
+
+.icon-clients6 {
+  background-image: url(../Photo/ourclients/logo6.svg);
+}
+
+/* .partners-section .partners-link:hover,
 .partners-section .partners-link:focus {
   background-color: var(--accent-color);
-}
+} */
 
 /* Footer */
 
@@ -454,10 +574,38 @@ body {
   line-height: 1.14;
 }
 
-.followus .followus-link:hover,
+.followus-link {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 44px;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-instagram {
+  background-image: url(../Photo/instagram.svg);
+}
+
+.icon-twitter {
+  background-image: url(../Photo/twitter.svg);
+}
+
+.icon-facebook {
+  background-image: url(../Photo/facebook.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../Photo/linkedin.svg);
+}
+
+}
+
+/* .followus .followus-link:hover,
 .followus .followus-link:focus {
   color: var(--accent-color);
-}
+} */
 /* Разработано / Devolped */
 .footer-devolped {
   margin-top: 0;
@@ -467,7 +615,7 @@ body {
 
 /* Button */
 .button {
-  display: inline-block;
+  display: inline-flex;
   /* border: 1px solid transparent; */
   min-width: 136px;
   padding: 10px 32px;
