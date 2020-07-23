@@ -12,11 +12,11 @@ html {
   box-sizing: border-box;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
+} */
 
 :root {
   --primary-text-color: #757575;
@@ -95,7 +95,6 @@ body {
 
 .nav {
   display: flex;
-  align-items: center;
 }
 
 .main-container {
@@ -156,11 +155,27 @@ body {
 .auth {
   display: flex;
   margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth .item + .item {
   margin-left: 50px;
 }
+
+/* .icon-item::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  padding: 0;
+  outline: 1px solid red;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../Photo/mail.svg); 
+} */
 
 /* ???????????????????????????????????? */
 .contact::before {
@@ -181,12 +196,6 @@ body {
 
 .icon-mobile {
   background-image: url(../Photo/mobile.svg);
-}
-
-.auth {
-  /* display: block; */
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .auth .contact:hover,
@@ -465,15 +474,16 @@ body {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
+
+  /* background-repeat: no-repeat;
+  background-position: center; */
 }
 
 .flex-partners + .flex-partners {
   margin-left: 30px;
 }
 
-.icon-clients1 {
+/* .icon-clients1 {
   background-image: url(../Photo/ourclients/logo1.svg);
 }
 
@@ -495,7 +505,7 @@ body {
 
 .icon-clients6 {
   background-image: url(../Photo/ourclients/logo6.svg);
-}
+} */
 
 /* .partners-section .partners-link:hover,
 .partners-section .partners-link:focus {
@@ -579,27 +589,26 @@ body {
   display: block;
   width: 44px;
   height: 44px;
-  
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.icon-instagram {
-  background-image: url(../Photo/instagram.svg);
+.followus-link > .icon-instagram {
+  background-image: url(../Photo/footer-icon/instagram.svg);
 }
 
-.icon-twitter {
-  background-image: url(../Photo/twitter.svg);
+.followus-link > .icon-twitter {
+  background-image: url(../Photo/footer-icon/twitter.svg);
 }
 
-.icon-facebook {
-  background-image: url(../Photo/facebook.svg);
+.followus-link > .icon-facebook {
+  background-image: url(../Photo/footer-icon/facebook.svg);
 }
 
-.icon-linkedin {
-  background-image: url(../Photo/linkedin.svg);
-}
-
+.followus-link > .icon-linkedin {
+  background-image: url(../Photo/footer-icon/linkedin.svg);
 }
 
 /* .followus .followus-link:hover,
@@ -636,6 +645,17 @@ body {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
+
+.followus > .primary-button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../Photo/footer-icon/iconsend.svg);
+  background-position: center;
+  background-size: contain;
+}
+
 /* Portfolio page */
 
 .flex-filter + .flex-filter {
