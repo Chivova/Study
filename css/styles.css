@@ -190,11 +190,11 @@ body {
   background-position: center;
 }
 
-.icon-mail {
+.icon-mail::before {
   background-image: url(../Photo/mail.svg);
 }
 
-.icon-mobile {
+.icon-mobile::before {
   background-image: url(../Photo/mobile.svg);
 }
 
