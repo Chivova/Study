@@ -163,38 +163,22 @@ body {
   margin-left: 50px;
 }
 
-/* .icon-item::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 11px;
-  padding: 0;
-  outline: 1px solid red;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url(../Photo/mail.svg); 
-} */
-
-/* ???????????????????????????????????? */
 .contact::before {
   content: '';
   display: inline-block;
   width: 16px;
-  height: 11px;
-  outline: 1px solid red;
+  height: 12px;
   margin-right: 10px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: bottom;
 }
 
-.icon-mail {
+.icon-mail::before {
   background-image: url(../Photo/mail.svg);
 }
 
-.icon-mobile {
+.icon-mobile::before {
   background-image: url(../Photo/mobile.svg);
 }
 
