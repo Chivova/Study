@@ -163,7 +163,7 @@ body {
   margin-left: 50px;
 }
 
-.contact::before {
+/* .contact::before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -172,20 +172,19 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
-}
+} */
 
-.icon-mail::before {
+/* .icon-mail::before {
   background-image: url(../Photo/mail.svg);
 }
 
 .icon-mobile::before {
   background-image: url(../Photo/mobile.svg);
-}
-
-.auth .contact:hover,
+} */
+/* .auth .contact:hover,
 .auth .contact:focus {
   color: var(--accent-color);
-}
+} */
 
 .auth .contact {
   color: var(--primary-text-color);
@@ -244,7 +243,7 @@ body {
 
 .flex-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .flex-features {
@@ -255,18 +254,22 @@ body {
   margin-left: 30px;
 }
 
-.flex-features::before {
-  content: '';
-  display: block;
+/* .flex-features {
   margin-bottom: 30px;
   height: 120px;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
 
   background-color: var(--secondary-background-color);
-}
+} */
 
+.features-icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+}
 /* Можно сделать так или через доп класс */
 
 /* .flex-choose:nth-child(1)::before {
@@ -285,7 +288,7 @@ body {
   background-image: url(../Photo/astronaut.png);
 } */
 
-.icon-locator::before {
+/* .icon-locator::before {
   background-image: url(../Photo/locator.svg);
 }
 
@@ -299,7 +302,7 @@ body {
 
 .icon-astronaut::before {
   background-image: url(../Photo/astronaut.svg);
-}
+} */
 
 .section-title {
   margin-top: 0;
