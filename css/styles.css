@@ -163,17 +163,13 @@ body {
   margin-left: 50px;
 }
 
-.contact {
-  width: 16px;
-  height: 12px;
-}
 
 /* .icon-mail::before {
-  background-image: url(../Photo/mail.svg);
+  background-image: url(../images/mail.svg);
 }
 
 .icon-mobile::before {
-  background-image: url(../Photo/mobile.svg);
+  background-image: url(../images/mobile.svg);
 } */
 /* .auth .contact:hover,
 .auth .contact:focus {
@@ -200,7 +196,7 @@ body {
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../Photo/Header.png);
+    url(../images/Header.png);
 
   background-color: var(--footer-bg-color);
 } */
@@ -214,7 +210,7 @@ body {
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url(../Photo/Header.png);
+    url(../images/Header.png);
 
   background-color: #2f303a;
   text-align: center;
@@ -237,7 +233,7 @@ body {
 
 .flex-container {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .flex-features {
@@ -268,35 +264,35 @@ body {
 /* Можно сделать так или через доп класс */
 
 /* .flex-choose:nth-child(1)::before {
-  background-image: url(../Photo/Locator.png);
+  background-image: url(../images/Locator.png);
 }
 
 .flex-choose:nth-child(2)::before {
-  background-image: url(../Photo/clock.png);
+  background-image: url(../images/clock.png);
 }
 
 .flex-choose:nth-child(3)::before {
-  background-image: url(../Photo/diagram.png);
+  background-image: url(../images/diagram.png);
 }
 
 .flex-choose:nth-child(4)::before {
-  background-image: url(../Photo/astronaut.png);
+  background-image: url(../images/astronaut.png);
 } */
 
 /* .icon-locator::before {
-  background-image: url(../Photo/locator.svg);
+  background-image: url(../images/locator.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../Photo/clock.svg);
+  background-image: url(../images/clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(../Photo/diagram.svg);
+  background-image: url(../images/diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../Photo/astronaut.svg);
+  background-image: url(../images/astronaut.svg);
 } */
 
 .section-title {
@@ -428,19 +424,19 @@ body {
 }
 
 .icon-instagram {
-  background-image: url(../Photo/instagram.svg);
+  background-image: url(../images/instagram.svg);
 }
 
 .icon-twitter {
-  background-image: url(../Photo/twitter.svg);
+  background-image: url(../images/twitter.svg);
 }
 
 .icon-facebook {
-  background-image: url(../Photo/facebook.svg);
+  background-image: url(../images/facebook.svg);
 }
 
 .icon-linkedin {
-  background-image: url(../Photo/linkedin.svg);
+  background-image: url(../images/linkedin.svg);
 }
 
 /* .team-section .team-link:hover,
@@ -466,27 +462,27 @@ body {
 }
 
 /* .icon-clients1 {
-  background-image: url(../Photo/ourclients/logo1.svg);
+  background-image: url(../images/ourclients/logo1.svg);
 }
 
 .icon-clients2 {
-  background-image: url(../Photo/ourclients/logo2.svg);
+  background-image: url(../images/ourclients/logo2.svg);
 }
 
 .icon-clients3 {
-  background-image: url(../Photo/ourclients/logo3.svg);
+  background-image: url(../images/ourclients/logo3.svg);
 }
 
 .icon-clients4 {
-  background-image: url(../Photo/ourclients/logo4.svg);
+  background-image: url(../images/ourclients/logo4.svg);
 }
 
 .icon-clients5 {
-  background-image: url(../Photo/ourclients/logo5.svg);
+  background-image: url(../images/ourclients/logo5.svg);
 }
 
 .icon-clients6 {
-  background-image: url(../Photo/ourclients/logo6.svg);
+  background-image: url(../images/ourclients/logo6.svg);
 } */
 
 /* .partners-section .partners-link:hover,
@@ -578,19 +574,19 @@ body {
 }
 
 .followus-link > .icon-instagram {
-  background-image: url(../Photo/footer-icon/instagram.svg);
+  background-image: url(../images/footer-icon/instagram.svg);
 }
 
 .followus-link > .icon-twitter {
-  background-image: url(../Photo/footer-icon/twitter.svg);
+  background-image: url(../images/footer-icon/twitter.svg);
 }
 
 .followus-link > .icon-facebook {
-  background-image: url(../Photo/footer-icon/facebook.svg);
+  background-image: url(../images/footer-icon/facebook.svg);
 }
 
 .followus-link > .icon-linkedin {
-  background-image: url(../Photo/footer-icon/linkedin.svg);
+  background-image: url(../images/footer-icon/linkedin.svg);
 }
 
 /* .followus .followus-link:hover,
@@ -633,7 +629,7 @@ body {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url(../Photo/footer-icon/iconsend.svg);
+  background-image: url(../images/footer-icon/iconsend.svg);
   background-position: center;
   background-size: contain;
 }
