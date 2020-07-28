@@ -164,8 +164,8 @@ body {
 }
 
 .contact {
-    width:16px;
-    height:12px;
+  width: 16px;
+  height: 12px;
 }
 
 /* .icon-mail::before {
@@ -264,6 +264,7 @@ body {
   background-color: var(--secondary-background-color);
   border-radius: 4px;
 }
+
 /* Можно сделать так или через доп класс */
 
 /* .flex-choose:nth-child(1)::before {
