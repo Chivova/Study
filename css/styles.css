@@ -163,16 +163,10 @@ body {
   margin-left: 50px;
 }
 
-/* .contact::before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-} */
+.contact {
+    width:16px;
+    height:12px;
+}
 
 /* .icon-mail::before {
   background-image: url(../Photo/mail.svg);
