@@ -254,13 +254,16 @@ body {
 .features-icon {
 display: flex;
 justify-content: centre;
-align-items - centre;
+align-items : centre;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
 
   background-color: var(--secondary-background-color);
   border-radius: 4px;
+}
+.icon {
+  display: flex;
 }
 
 /* Можно сделать так или через доп класс */
