@@ -262,12 +262,12 @@ align-items : centre;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
 }
-.icon {
-  display: flex;
-  justify-content: centre;
 
-align-items : centre;
-}
+  
+
+
+
+
 
 /* Можно сделать так или через доп класс */
 
