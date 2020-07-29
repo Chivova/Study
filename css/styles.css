@@ -264,6 +264,9 @@ align-items : centre;
 }
 .icon {
   display: flex;
+  justify-content: centre;
+
+align-items : centre;
 }
 
 /* Можно сделать так или через доп класс */
