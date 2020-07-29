@@ -253,8 +253,8 @@ body {
 
 .features-icon {
 display: flex;
-justify-content: centre;
-align-items : centre;
+justify-content: center;
+align-items : center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
