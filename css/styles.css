@@ -27,6 +27,7 @@ html {
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -162,6 +163,21 @@ body {
 .auth .item + .item {
   margin-left: 50px;
 }
+.contact-icon {
+  margin-right: 10px;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  fill: var(--primary-text-color);
+  color: var(--primary-text-color);
+}
+
+.header-contact:hover {
+  fill: var(--accent-color);
+  color: var(--accent-color);
+}
 
 /* .icon-mail::before {
   background-image: url(../images/mail.svg);
@@ -252,22 +268,15 @@ body {
 } */
 
 .features-icon {
-display: flex;
-justify-content: center;
-align-items : center;
-  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   margin-bottom: 30px;
 
   background-color: var(--secondary-background-color);
   border-radius: 4px;
 }
-
-  
-
-
-
-
 
 /* Можно сделать так или через доп класс */
 
@@ -421,35 +430,41 @@ align-items : center;
 }
 
 .team-link {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: red; 
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
 }
 
 .team-link:hover {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  fill: var(--white-text-color);
 }
-
-/* .team-icon {
-  fill: currentColor;
-} */
 
 /* Our Partners */
 
-.partners-icon {
+.partners {
+  display: flex;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-color);
 }
 
 .flex-partners + .flex-partners {
   margin-left: 30px;
 }
-.partners-icon:hover {
-  color: var(--accent-color);
+
+.partners:hover {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -525,15 +540,18 @@ align-items : center;
 }
 
 .followus-link {
-  display: inline-block;
+  display: flex;
   width: 44px;
   height: 44px;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-text-color);
 }
 
 .followus-link:hover {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 /* Разработано / Devolped */
