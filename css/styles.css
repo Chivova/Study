@@ -252,9 +252,10 @@ body {
 } */
 
 .features-icon {
+display: flex;
+justify-content: centre;
   width: 270px;
   height: 120px;
-  padding: 25px 102px;
   margin-bottom: 30px;
 
   background-color: var(--secondary-background-color);
