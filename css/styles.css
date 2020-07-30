@@ -584,15 +584,15 @@ body {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
+/* сдеать иконку на кнопке !!!!!!!!!!!!!!!!!!!!!!! */
 
 .followus > .primary-button::after {
-  content: '';
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url(../images/footer-icon/iconsend.svg);
+  /* background-image: url(../images/footer-icon/iconsend.svg);
   background-position: center;
-  background-size: contain;
+  background-size: contain; */
 }
 
 /* Portfolio page */
@@ -638,13 +638,41 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 
+  position: relative;
+
   background: var(--primary-background-color);
+}
+
+/* .project-action {
+  position: relative;
+} */
+
+.section-subparagraph {
+  position: absolute;
+  top: 63px;
+  left: 24px;
+  right: 24px;
+  opacity: 0;
+  outline: 1px solid tomato;
+
+  /* Чтобы поставить по центру нужна такая формула
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .flex-project :hover,
 .flex-project:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
+  opacity: 1;
 }
 
 .flex-project:nth-child(3n) {
@@ -695,16 +723,6 @@ body {
   font-size: 16px;
   line-height: 1.9;
   box-shadow: none;
-}
-
-.section .section-subparagraph {
-  margin-top: 0;
-  margin-bottom: 0;
-  display: none;
-
-  color: var(--white-text-color);
-  font-size: 18px;
-  line-height: 1.6;
 }
 
 /* не рабатоет паадинг в заголовках, не переноситься на новую строку */
