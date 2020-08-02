@@ -638,23 +638,35 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 
-  position: relative;
-
   background: var(--primary-background-color);
 }
 
-/* .project-action {
+.project-action {
   position: relative;
-} */
+}
+
+.project-action::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+.project-action:hover::before {
+  opacity: 1;
+}
 
 .section-subparagraph {
   position: absolute;
   padding: 63px 24px;
   top: 0;
-  opacity: 0;
-  outline: 1px solid tomato;
-  width: 100%;
-  height: 100%;
+
+  /* outline: 1px solid tomato; */
+  /* width: 100%;
+  height: 100%; */
 
   /* Чтобы поставить по центру нужна такая формула
   top: 50%;
@@ -664,9 +676,11 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
-  color: var(--title-text-color);
+  color: var(--white-text-color);
   font-size: 18px;
   line-height: 1.6;
+
+  opacity: 0;
 }
 
 .flex-project :hover,
