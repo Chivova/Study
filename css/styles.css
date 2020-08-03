@@ -348,9 +348,18 @@ body {
   margin-bottom: 0;
 }
 
-.elemen-action {
-  width: 370px;
+.element-overley {
+  position: relative;
+}
+
+.element-action {
+  position: absolute;
+  width: 100%;
   height: 70px;
+  padding: 27px;
+  left: 0;
+  bottom: 0;
+
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -358,9 +367,8 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 
-  /* color: var(--white-text-color); */
   color: var(--white-text-color);
-  /* пока что  */
+
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -589,16 +597,13 @@ body {
 .button.primary-button {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  justify-content: center;
+  align-items: center;
 }
 /* сдеать иконку на кнопке !!!!!!!!!!!!!!!!!!!!!!! */
 
-.followus > .primary-button::after {
-  width: 24px;
-  height: 24px;
+.icon-send {
   margin-left: 10px;
-  /* background-image: url(../images/footer-icon/iconsend.svg);
-  background-position: center;
-  background-size: contain; */
 }
 
 /* Portfolio page */
@@ -647,6 +652,14 @@ body {
   background: var(--primary-background-color);
 }
 
+.flex-project:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.flex-project:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .project-action {
   position: relative;
 }
@@ -661,6 +674,7 @@ body {
 
   opacity: 0;
 }
+
 .project-action:hover::before {
   opacity: 1;
 }
@@ -689,19 +703,25 @@ body {
   opacity: 0;
 }
 
-.flex-project :hover,
+.section-subparagraph:hover {
+  opacity: 1;
+}
+/* .card {
+  width: 370px;
+  height: 404px;
+}
+.card:hover,
+.caed:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  opacity: 1;
+} */
+
+.flex-project:hover,
 .flex-project:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
   opacity: 1;
-}
-
-.flex-project:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.flex-project:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
 }
 
 .card-img {
