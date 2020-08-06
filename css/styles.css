@@ -693,11 +693,11 @@ body {
   margin-bottom: 0px;
 }
 
-.examples-action {
+.examples-thumb {
   position: relative;
 }
 
-.examples-action::before {
+.examples-thumb::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -707,8 +707,10 @@ body {
 
   opacity: 0;
 }
-
-.examples-action:hover::before {
+.examples-item:hover .examples-thumb::before {
+  opacity: 1;
+}
+.examples-thumb:hover::before {
   opacity: 1;
 }
 
@@ -736,9 +738,9 @@ body {
   opacity: 0;
 }
 
-.action-subparagraph:hover {
+/* .action-subparagraph:hover {
   opacity: 1;
-}
+} */
 /* .card {
   width: 370px;
   height: 404px;
@@ -750,11 +752,15 @@ body {
   opacity: 1;
 } */
 
-.examples-item:hover,
-.examples-item:focus {
+/* возможно дать ховер на ссылку ???????? */
+
+.examples-item:hover .action-subparagraph {
+  opacity: 1;
+}
+
+.examples-item:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
-  opacity: 1;
 }
 
 .card-img {
