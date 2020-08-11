@@ -454,15 +454,15 @@ body {
 
 .img-item {
   padding-bottom: 30px;
-  transform: rotateY(0deg);
-  transition: rotateY 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transform: translateX(0);
+  transition: translateX 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.ourteam-item:hover .img-item,
+/* .ourteam-item:hover .img-item,
 .ourteam-item:focus .img-item {
-  transform: rotateY(180deg);
-  transition: rotateY 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transform: translateX(360%);
+  transition: translateX 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .team-section .name-title {
   margin-top: 0px;
@@ -498,8 +498,7 @@ body {
 
   fill: var(--icon-color);
 
-  /* transform: scale(1); */
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .social-link:hover,
