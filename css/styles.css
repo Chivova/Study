@@ -169,15 +169,16 @@ body {
 
   background-color: var(--accent-color);
   border-radius: 2px;
-
-  transform: scaleX(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Для визуализации маштаба полоски 
+transform: scaleX(1);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .current:hover::after,
 .current:focus::after {
   transform: scaleX(0);
-}
+} */
 
 /* auth  */
 
@@ -454,14 +455,14 @@ body {
 
 .img-item {
   padding-bottom: 30px;
-  /* transform: translateX(0);
-  transition: translateX 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  /* transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 /* .ourteam-item:hover .img-item,
 .ourteam-item:focus .img-item {
-  transform: translateX(360%);
-  transition: translateX 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
 .team-section .name-title {
@@ -498,14 +499,14 @@ body {
 
   fill: var(--icon-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms,
+    fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-text-color);
-  /* transform: scale(0); */
 }
 
 /* Our Partners */
@@ -528,7 +529,8 @@ body {
   align-items: center;
   fill: var(--icon-color);
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners:hover,
@@ -666,16 +668,16 @@ body {
   overflow: hidden;
 }
 
-.button.primary-button:hover .icon-send {
-  transform: translateX(0);
-  transition: translateX 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.button.primary-button:hover .icon-send,
+.button.primary-button:focus .icon-send {
+  transform: translateX(60px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-send {
   margin-left: 10px;
   /* position: absolute; */
-
-  transform: translateX(300%);
+  transform: translateX(0);
 }
 
 /* Portfolio page */
@@ -737,18 +739,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
-/* .examples-action {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-
-  background-color: rgba(33, 150, 243, 0.9);
-
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .action-subparagraph {
   display: block;
@@ -832,3 +822,5 @@ body {
   font-size: 16px;
   line-height: 1.9;
 }
+
+/* Поменять кубик на переменную */
