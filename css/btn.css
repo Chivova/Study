@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding-left: 50%;
+  padding-top: 25%;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 4px;
+
+  align-items: center;
+  background-color: rgb(45, 87, 45);
+  color: white;
+
+  overflow: hidden;
+  transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.btn:hover {
+  background-color: rgb(172, 37, 37);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.social-icon1 {
+  margin-left: 5px;
+  fill: wheat;
+
+  transition: transform 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.btn:hover .social-icon1,
+.btn:focus .social-icon1 {
+  transform: translateY(-40px);
+}
+
+.social-icon2 {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+
+  fill: yellow;
+
+  transition: transform 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  transform: translateY(calc(-50% + 40px));
+}
+
+.btn:hover .social-icon2,
+.btn:focus .social-icon2 {
+  transform: translateY(-50%);
+}
