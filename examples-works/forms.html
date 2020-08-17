@@ -12,20 +12,46 @@
   </head>
   <body>
     <form class="js-speaker-form">
+      <!-- autocomplete="" используеться что бы выключить или включить автозаполниение 
+в основном используеться для паролей(выключить). В браузерах autocomplete запилин автоматически 
+Можно кинуть на всю форму или один елемент (точечно). Имеет много значений,лучше смотреть
+когда заполнять, когда нет-->
+
+      <!-- Для того что бы при загрузке страницы в елементе(поле) стоял фокус нужен
+      атрибут autofocus. autofocus может только быть в одином елементе на
+      страницу -->
+
+      <!-- placeholder = Выводит текст внутри поля формы, который исчезает при получении фокуса. -->
       <label for="name">Имя</label>
-      <input type="text" name="user-name" id="name" />
+      <input
+        type="text"
+        name="user-name"
+        id="name"
+        autofocus
+        placeholder="Иван Иваныч"
+      />
 
       <label for="tel">Телефон</label>
-      <input type="tel" name="tel" id="tel" />
+      <input type="tel" name="tel" id="tel" placeholder="+38(000)-000-000-00" />
 
       <label for="mail">Почта</label>
-      <input type="email" name="email" id="mail" />
+      <input
+        type="email"
+        name="email"
+        id="mail"
+        placeholder="example@mail.com"
+      />
 
       <!-- role= повышает симантику, используеться только для "группы элементов" формы
       (читалка прочитает как группа элементов) -->
       <div role="group">
         <!-- checkbox - выбирает многое из многих -->
         <!-- У checkbox name должно быть одинаковым -->
+
+        <!-- атрибут checked выбирает значение по умолчанию
+        <input type="checkbox" name="topic" value="html" id="html"  checked/>
+        <label for="html">Html</label> -->
+
         <input type="checkbox" name="topic" value="html" id="html" />
         <label for="html">Html</label>
 
@@ -37,14 +63,51 @@
       </div>
 
       <!-- radio - одно из многих. name должен быть обязаиельно одно -->
-      <input type="radio" name="experience" value="junior" id="junior" />
-      <label for="junior">Junior</label>
+      <!-- атрибут checked выбирает значение по умолчанию -->
 
-      <input type="radio" name="experience" value="middle" id="middle" />
-      <label for="middle">Middle</label>
+      <div role="group">
+        <input type="radio" name="experience" value="junior" id="junior" />
+        <label for="junior">Junior</label>
 
-      <input type="radio" name="experience" value="senior" id="senior" />
-      <label for="senior">Senior</label>
+        <input type="radio" name="experience" value="middle" id="middle" />
+        <label for="middle">Middle</label>
+
+        <input type="radio" name="experience" value="senior" id="senior" />
+        <label for="senior">Senior</label>
+      </div>
+
+      <label for="date">Дата доклада</label>
+      <input type="datetime-local" name="date" id="date" />
+
+      <!-- можно так же установить ограничение по времени атрибутами min & max Пример
+      записи для datetime-local :
+      <label for="date">Дата доклада</label>
+      <input
+        type="datetime-local"
+        name="date"
+        id="date"
+        min="2020-08-12T:10:00"
+        max="2020-08-15T:12:00"
+      /> -->
+
+      <!-- Загрузка файла -->
+      <label for="pdf">Загрузите копию доклада в pdf </label>
+      <input type="file" name="pdf" id="pdf" />
+
+      <!-- Многострочное поле дял ввода текста (Оставьте комментарий) -->
+      <!-- placeholder = Выводит текст внутри поля формы, который исчезает при получении фокуса. -->
+      <label for="comment">Оставьте комментарий</label>
+      <textarea
+        name="comment"
+        id="comment"
+        rows="10"
+        placeholder="Уточните детали доклада"
+      ></textarea>
+
+      <!-- Условия конфиденциальности -->
+      <input type="checkbox" name="confidentia" id="confidentia" />
+      <label for="confidentia">Соглашаюсь на все, за еду</label>
+
       <button type="submit">Оставить заявку</button>
     </form>
 
