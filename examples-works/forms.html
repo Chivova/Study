@@ -11,102 +11,144 @@
     <link rel="stylesheet" href="./examples-css/forms.css" />
   </head>
   <body>
-    <form class="js-speaker-form">
+    <form class="form js-speaker-form">
       <!-- autocomplete="" используеться что бы выключить или включить автозаполниение 
 в основном используеться для паролей(выключить). В браузерах autocomplete запилин автоматически 
 Можно кинуть на всю форму или один елемент (точечно). Имеет много значений,лучше смотреть
 когда заполнять, когда нет-->
 
-      <!-- Для того что бы при загрузке страницы в елементе(поле) стоял фокус нужен
-      атрибут autofocus. autofocus может только быть в одином елементе на
-      страницу -->
+      <div class="form-group">
+        <!-- Для того что бы при загрузке страницы в елементе(поле) стоял фокус нужен
+              атрибут autofocus. autofocus может только быть в одином елементе на
+              страницу -->
 
-      <!-- placeholder = Выводит текст внутри поля формы, который исчезает при получении фокуса. -->
-      <label for="name">Имя</label>
-      <input
-        type="text"
-        name="user-name"
-        id="name"
-        autofocus
-        placeholder="Иван Иваныч"
-      />
+        <!-- placeholder = Выводит текст внутри поля формы, который исчезает при получении фокуса. -->
+        <label for="name">Имя</label>
+        <input
+          type="text"
+          name="user-name"
+          id="name"
+          autofocus
+          placeholder="Иван Иваныч"
+        />
+      </div>
 
-      <label for="tel">Телефон</label>
-      <input type="tel" name="tel" id="tel" placeholder="+38(000)-000-000-00" />
+      <div class="form-group">
+        <label for="tel">Телефон</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="+38(000)-000-000-00"
+        />
+      </div>
 
-      <label for="mail">Почта</label>
-      <input
-        type="email"
-        name="email"
-        id="mail"
-        placeholder="example@mail.com"
-      />
+      <div class="form-group">
+        <label for="mail">Почта</label>
+        <input
+          type="email"
+          name="email"
+          id="mail"
+          placeholder="example@mail.com"
+        />
+      </div>
 
       <!-- role= повышает симантику, используеться только для "группы элементов" формы
       (читалка прочитает как группа элементов) -->
-      <div role="group">
+      <div role="group" class="group">
         <!-- checkbox - выбирает многое из многих -->
         <!-- У checkbox name должно быть одинаковым -->
+        <!-- checkbox & radio стоит обварачивать в список(ul) это буквально список опций  -->
 
         <!-- атрибут checked выбирает значение по умолчанию
         <input type="checkbox" name="topic" value="html" id="html"  checked/>
         <label for="html">Html</label> -->
 
-        <input type="checkbox" name="topic" value="html" id="html" />
-        <label for="html">Html</label>
+        <h2 class="group-tittle">Тема доклада</h2>
 
-        <input type="checkbox" name="topic" value="css" id="css" />
-        <label for="css">CSS</label>
+        <ul class="topic-option">
+          <li>
+            <input type="checkbox" name="topic" value="html" id="html" />
+            <label for="html">Html</label>
+          </li>
 
-        <input type="checkbox" name="topic" value="js" id="js" />
-        <label for="js">JavaScript</label>
+          <li>
+            <input type="checkbox" name="topic" value="css" id="css" />
+            <label for="css">CSS</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="topic" value="js" id="js" />
+            <label for="js">JavaScript</label>
+          </li>
+        </ul>
       </div>
 
       <!-- radio - одно из многих. name должен быть обязаиельно одно -->
       <!-- атрибут checked выбирает значение по умолчанию -->
+      <!-- checkbox & radio стоит обварачивать в список(ul) это буквально список опций  -->
 
-      <div role="group">
-        <input type="radio" name="experience" value="junior" id="junior" />
-        <label for="junior">Junior</label>
+      <div role="group" class="group">
+        <h2 class="group-tittle">Ваш уорвень (ваш уровень экспертизы)</h2>
 
-        <input type="radio" name="experience" value="middle" id="middle" />
-        <label for="middle">Middle</label>
+        <ul class="experience-options">
+          <li>
+            <input type="radio" name="experience" value="junior" id="junior" />
+            <label for="junior">Junior</label>
+          </li>
 
-        <input type="radio" name="experience" value="senior" id="senior" />
-        <label for="senior">Senior</label>
+          <li>
+            <input type="radio" name="experience" value="middle" id="middle" />
+            <label for="middle">Middle</label>
+          </li>
+
+          <li>
+            <input type="radio" name="experience" value="senior" id="senior" />
+            <label for="senior">Senior</label>
+          </li>
+        </ul>
       </div>
 
-      <label for="date">Дата доклада</label>
-      <input type="datetime-local" name="date" id="date" />
+      <div class="form-group">
+        <label for="date">Дата доклада</label>
+        <input type="datetime-local" name="date" id="date" class="form-date" />
 
-      <!-- можно так же установить ограничение по времени атрибутами min & max Пример
-      записи для datetime-local :
-      <label for="date">Дата доклада</label>
-      <input
-        type="datetime-local"
-        name="date"
-        id="date"
-        min="2020-08-12T:10:00"
-        max="2020-08-15T:12:00"
-      /> -->
+        <!-- можно так же установить ограничение по времени атрибутами min & max Пример
+              записи для datetime-local :
+              <label for="date">Дата доклада</label>
+              <input
+                type="datetime-local"
+                name="date"
+                id="date"
+                min="2020-08-12T:10:00"
+                max="2020-08-15T:12:00"
+              /> -->
+      </div>
 
-      <!-- Загрузка файла -->
-      <label for="pdf">Загрузите копию доклада в pdf </label>
-      <input type="file" name="pdf" id="pdf" />
+      <div class="form-group">
+        <!-- Загрузка файла -->
+        <label for="pdf">Загрузите копию доклада в pdf </label>
+        <input type="file" name="pdf" id="pdf" />
+      </div>
 
-      <!-- Многострочное поле дял ввода текста (Оставьте комментарий) -->
-      <!-- placeholder = Выводит текст внутри поля формы, который исчезает при получении фокуса. -->
-      <label for="comment">Оставьте комментарий</label>
-      <textarea
-        name="comment"
-        id="comment"
-        rows="10"
-        placeholder="Уточните детали доклада"
-      ></textarea>
+      <div class="form-group">
+        <!-- Многострочное поле дял ввода текста (Оставьте комментарий) -->
+        <!-- placeholder = Выводит текст внутри поля формы, который исчезает при получении фокуса. -->
+        <label for="comment">Оставьте комментарий</label>
+        <textarea
+          class="form-comment"
+          name="comment"
+          id="comment"
+          rows="10"
+          placeholder="Уточните детали доклада"
+        ></textarea>
+      </div>
 
-      <!-- Условия конфиденциальности -->
-      <input type="checkbox" name="confidentia" id="confidentia" />
-      <label for="confidentia">Соглашаюсь на все, за еду</label>
+      <div class="form-group-confidentia">
+        <!-- Условия конфиденциальности -->
+        <input type="checkbox" name="confidentia" id="confidentia" />
+        <label for="confidentia">Соглашаюсь на все, за еду</label>
+      </div>
 
       <button type="submit">Оставить заявку</button>
     </form>
