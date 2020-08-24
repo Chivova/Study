@@ -378,7 +378,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent-color);
 }
 
-.bnt-close {
+.btn-close {
   position: absolute;
   right: 0;
   top: 0;
