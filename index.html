@@ -67,27 +67,37 @@
   
     <div class="form-group">
       <label for="name"></label>
-      <input type="text" name="user-name" id="name" autofocus placeholder="Имя">
+      <input class="form-field" class="form-field" type="text" name="user-name" id="name" autofocus>
     </div>
+<!-- <label class="form-text" for="name"><svg class="form-icon" width="12" height="12">
+    <use href="./images/sprite.svg#form-name"></use>
+  </svg>Имя</label> -->
 
 <div class="form-group">
   <label for="tel"></label>
-<input type="tel" name="tel" id="tel" placeholder="Телефон">
+<input class="form-field" type="tel" name="tel" id="tel" placeholder="Телефон">
 </div>
 
  <div class="form-group">
     <label for="email"></label>
-    <input type="email" name="email" id="email" placeholder="Почта">
+    <input class="form-field" type="email" name="email" id="email" placeholder="Почта">
  </div>
 
  <div class="form-group">
-  <textarea class="form-comment" name="form-comment" id="form-comment" rows="10" placeholder="Комментарий"></textarea>
+  <textarea class="form-comment" name="form-comment" id="form-comment" rows="5" placeholder="Комментарий"></textarea>
  </div>
-<div class="form-group-confidentia"><input type="checkbox" name="confidentia" id="confidentia" />
-<label for="confidentia">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label></div>
+<div class="form-confidentia">
+  <input class="form-chekbox" type="checkbox" name="confidentia" id="confidentia" />
+<label for="confidentia">Соглашаюсь с рассылкой и принимаю 
+  <a class="agreement-link" href="">Условия договора</a>
+</label>
+</div>
 
 
-<button type="submit" class="button primary-button" data-modal-close>Закрыть</button>
+<button type="submit" class="button primary-button" >Отправить</button>
+<button class="bnt-close" data-modal-close> <svg width="11" height="11">
+  <use href="./images/sprite.svg#form-close"></use>
+</svg> </button>
   </form>
  
 
@@ -487,16 +497,19 @@
             </li>
           </ul>
         </div>
-        <div class="followus">
-          <b class="followus-tittle">Подпишитесь на россылку</b>
-          <a href="" class="button primary-button">
-            Подписаться
+        
+          <form class="footer-form">
+            <div class="footer-form-group">
+              <label class="followus-tittle" for="email">Подпишитесь на россылку</label>
+              <input class="footer-form-field" type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <button class="button primary-button" type="submit">Подписаться
             <svg class="icon-send" width="24" height="24">
               <use href="./images/sprite.svg#iconsend"></use>
             </svg>
-          </a>
+            </button>
+          </form>
         </div>
-      </div>
       <p class="footer-devolped">&copy; 2020 | Developed by</p>
     </footer>
     <script src="./js/modal.js"></script>

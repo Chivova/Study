@@ -88,6 +88,7 @@ textarea {
 .form-comment {
   padding: 10px;
   font-size: 18px;
+  resize: none;
 }
 
 .form-group-confidentia {
