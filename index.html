@@ -64,23 +64,33 @@
 <div class="modal">
   <form class="form">
     <h2 class="form-tittle">Оставьте свои данные, мы вам перезвоним</h2>
-  
-    <div class="form-group">
-      <label for="name"></label>
-      <input class="form-field" class="form-field" type="text" name="user-name" id="name" autofocus>
-    </div>
-<!-- <label class="form-text" for="name"><svg class="form-icon" width="12" height="12">
-    <use href="./images/sprite.svg#form-name"></use>
-  </svg>Имя</label> -->
+  <button class="btn-close" data-modal-close> <svg width="11" height="11">
+      <use href="./images/sprite.svg#form-close"></use>
+    </svg> 
+  </button>
 
-<div class="form-group">
-  <label for="tel"></label>
-<input class="form-field" type="tel" name="tel" id="tel" placeholder="Телефон">
+    <div class="form-group">
+    <input class="form-field" type="text" name="user-name" id="name" placeholder=" " autofocus>
+    <label class="form-label" for="name">Имя</label>
+    <svg class="form-icon" width="12" height="12">
+      <use href="./images/sprite.svg#form-name"></use>
+    </svg>
+  </div>
+
+  <div class="form-group">
+<input class="form-field" type="tel" name="tel" id="tel" placeholder=" ">
+<label for="tel" class="form-label">Телефон</label>
+<svg class="form-icon" width="13" height="13">
+  <use href="./images/sprite.svg#form-tel"></use>
+</svg>
 </div>
 
  <div class="form-group">
-    <label for="email"></label>
-    <input class="form-field" type="email" name="email" id="email" placeholder="Почта">
+ <input class="form-field" type="email" name="email" id="email" placeholder=" ">
+ <label  for="email"  class="form-label">Почта</label>
+    <svg class="form-icon" width="15" height="12">
+      <use href="./images/sprite.svg#form-mail"></use>
+    </svg>
  </div>
 
  <div class="form-group">
@@ -95,9 +105,7 @@
 
 
 <button type="submit" class="button primary-button" >Отправить</button>
-<button class="btn-close" data-modal-close> <svg width="11" height="11">
-  <use href="./images/sprite.svg#form-close"></use>
-</svg> </button>
+
   </form>
  
 
@@ -502,12 +510,12 @@
             <div class="footer-form-group">
               <label class="followus-tittle" for="email">Подпишитесь на россылку</label>
               <input class="footer-form-field" type="email" name="email" id="email" placeholder="Email">
-            </div>
-            <button class="button primary-button" type="submit">Подписаться
+          <button class="button primary-button" type="submit">Подписаться
             <svg class="icon-send" width="24" height="24">
               <use href="./images/sprite.svg#iconsend"></use>
             </svg>
-            </button>
+          </button>
+            </div>
           </form>
         </div>
       <p class="footer-devolped">&copy; 2020 | Developed by</p>

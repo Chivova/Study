@@ -318,66 +318,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
-/* .form {
-  position: relative;
-} */
-
-.form-tittle {
-  margin: 0;
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  line-height: 0.9;
-
-  color: var(--title-text-color);
-}
-
-.form-field {
-  position: relative;
-  display: inline-flex;
-  padding: 12px 19px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-/* .form-text {
-  position: absolute;
-  padding: 14px 19px;
-}
-.form-icon {
-  margin-right: 11px;
-} */
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 28px;
-}
-
-.form-comment {
-  padding: 12px 16px;
-  /* height: 120px; */
-  resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.form-confidentia {
-  display: flex;
-  margin-bottom: 40px;
-  align-items: center;
-}
-
-.form-chekbox {
-  margin-right: 8px;
-}
-
-.agreement-link {
-  color: var(--accent-color);
-}
-
 .btn-close {
   position: absolute;
   right: 0;
@@ -396,8 +336,90 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--primary-background-color);
 }
 
-.bnt-close:hover {
+.btn-close:hover {
   fill: var(--accent-color);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-tittle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  line-height: 0.9;
+
+  color: var(--title-text-color);
+}
+
+.form-field {
+  display: inline-flex;
+  width: 100%;
+  padding: 12px 19px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Когда есть фокус и нету, сдвигает input */
+/* !!!!!!!!!!!!!!!!Это Old School !!!!!!!!!!!!!!!!! */
+.form-field:focus + .form-label,
+.form-field:not(:placeholder-shown) + .form-label {
+  color: var(--accent-color);
+  transform: translateY(-43px) translateX(-28px) scale(0.85);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-comment {
+  padding: 12px 16px;
+  width: 100%;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-confidentia {
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.form-chekbox {
+  margin-right: 8px;
+}
+
+.agreement-link {
+  color: var(--accent-color);
 }
 
 /* section  features (choose) */
@@ -751,6 +773,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--footer-bg-color);
+  color: var(--footer-contact-text);
 }
 
 /* Разработано / Devolped */
@@ -765,6 +788,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-flex;
   /* border: 1px solid transparent; */
   min-width: 200px;
+  height: 50px;
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
