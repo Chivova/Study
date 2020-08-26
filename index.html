@@ -57,17 +57,19 @@
     <!--Под шапкой-->
     <!-- Герой -->
     <section class="hero">
-      
-      <h2 class="hero-title">ЭФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА</h2>
-      <button class="button primary-button " data-modal-open>Заказать услугу</button>
-      <div class="backdrop is-hidden" data-modal>
-<div class="modal">
-  <form class="form">
-    <h2 class="form-tittle">Оставьте свои данные, мы вам перезвоним</h2>
-  <button class="btn-close" data-modal-close> <svg width="11" height="11">
-      <use href="./images/sprite.svg#form-close"></use>
-    </svg> 
-  </button>
+    <h2 class="hero-title">ЭФЕКТИВНЫЕ РЕШЕНИЯ <br />ДЛЯ ВАШЕГО БИЗНЕСА</h2>
+    <!-- Backdrop -->
+    <button class="button primary-button " data-modal-open>Заказать услугу</button>
+    <div class="backdrop is-hidden" data-modal>
+  <!-- Modal -->
+      <div class="modal">
+        <!-- Форма -->
+        <form class="form">
+          <h2 class="form-tittle">Оставьте свои данные, мы вам перезвоним</h2>
+          <button class="btn-close" data-modal-close> <svg width="11" height="11">
+            <use href="./images/sprite.svg#form-close"></use>
+          </svg> 
+          </button>
 
     <div class="form-group">
     <input class="form-field" type="text" name="user-name" id="name" placeholder=" " autofocus>
@@ -93,7 +95,7 @@
     </svg>
  </div>
 
- <div class="form-group">
+ <div class="form-textarea">
   <textarea class="form-comment" name="form-comment" id="form-comment" rows="5" placeholder="Комментарий"></textarea>
  </div>
 <div class="form-confidentia">
@@ -103,13 +105,9 @@
 </label>
 </div>
 
-
 <button type="submit" class="button primary-button" >Отправить</button>
 
   </form>
- 
-
-  
 </div>
       </div>
     </section>
@@ -468,7 +466,7 @@
           <a class="address-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
         </address>
         <!--почему div на видео 2 43:00-->
-        <div class="followus list">
+        <div class="followus">
           <b class="followus-tittle">ПРИСОЕДИНЯЙТЕСЬ</b>
           <ul class="social-list  list">
             <li class="social-item">
