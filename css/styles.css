@@ -416,8 +416,10 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-confidentia {
-  display: inline-block;
+  display: flex;
   margin-bottom: 30px;
+
+  align-items: center;
 }
 
 .form-chekbox-icon {
@@ -430,10 +432,26 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
 }
 
+.form-chekbox {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .form-chekbox:checked + .form-chekbox-icon {
   background-color: var(--accent-color);
-  background-image: url('../images/full-сheck.svg');
+  background-image: url('../images/icon-check.svg');
+  background-origin: border-box;
   background-size: contain;
+  /* border: inherit; */
+  border-color: transparent;
 }
 
 .agreement-link {
