@@ -77,48 +77,49 @@
                 name="filter"
                 value="all"
                 id="filter"
+                checked
               />
-              <label class="filter-button" for="filter"> Все</label>
+              <label class="filter-btn" for="filter"> Все</label>
             </li>
             <li class="filter-item">
               <input
                 class="filter-radio"
                 type="radio"
                 name="filter"
-                value="all"
-                id="filter"
+                value="web-site"
+                id="web-site"
               />
-              <label class="filter-button" for="filter"> Веб-сайты</label>
+              <label class="filter-btn" for="web-site"> Веб-сайты</label>
             </li>
             <li class="filter-item">
               <input
                 class="filter-radio"
                 type="radio"
                 name="filter"
-                value="all"
-                id="filter"
+                value="applications"
+                id="applications"
               />
-              <label class="filter-button" for="filter"> Приложения</label>
+              <label class="filter-btn" for="applications"> Приложения</label>
             </li>
             <li class="filter-item">
               <input
                 class="filter-radio"
                 type="radio"
                 name="filter"
-                value="all"
-                id="filter"
+                value="design"
+                id="design"
               />
-              <label class="filter-button" for="filter"> Дизайн</label>
+              <label class="filter-btn" for="design"> Дизайн</label>
             </li>
             <li class="filter-item">
               <input
                 class="filter-radio"
                 type="radio"
                 name="filter"
-                value="all"
-                id="filter"
+                value=" marketing"
+                id="marketing"
               />
-              <label class="filter-button" for="filter"> Маркетинг</label>
+              <label class="filter-btn" for="marketing"> Маркетинг</label>
             </li>
           </ul>
 
@@ -340,7 +341,7 @@
         <!--почему div на видео 2 43:00-->
         <div class="followus">
           <b class="followus-tittle">ПРИСОЕДИНЯЙТЕСЬ</b>
-          <ul class="followus-list list">
+          <ul class="social-list list">
             <li class="social-item">
               <a class="followus-link" href="" aria-label="Сыылка на Instagram">
                 <svg width="20" height="20">
@@ -371,15 +372,27 @@
             </li>
           </ul>
         </div>
-        <div class="followus">
-          <b class="followus-tittle">Подпишитесь на россылку</b>
-          <a href="" class="button primary-button">
-            Подписаться
-            <svg class="icon-send" width="24" height="24">
-              <use href="./images/sprite.svg#iconsend"></use>
-            </svg>
-          </a>
-        </div>
+
+        <form class="footer-form">
+          <div class="footer-form-group">
+            <label class="followus-tittle" for="email"
+              >Подпишитесь на россылку</label
+            >
+            <input
+              class="footer-form-field"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <button class="button primary-button" type="submit">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/sprite.svg#iconsend"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
       <p class="footer-devolped">&copy; 2020 | Developed by</p>
     </footer>

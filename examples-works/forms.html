@@ -152,24 +152,66 @@
 
       <button type="submit">Оставить заявку</button>
     </form>
-    <div class="radio_buttons">
-      <div>
-        <input type="radio" name="option" id="radio1" checked />
-        <label for="radio1">Текст radio кнопки №1</label>
-      </div>
-      <div>
-        <input type="radio" name="option" id="radio2" />
-        <label for="radio2">radio кнопка №2</label>
-      </div>
-      <div>
-        <input type="radio" name="option" id="radio3" />
-        <label for="radio3">Еще текст radio кнопки №3</label>
-      </div>
-      <div>
-        <input type="radio" name="option" id="radio4" />
-        <label for="radio4">radio №4</label>
-      </div>
-    </div>
+
+    <form>
+      <ul class="filter-list list">
+        <li class="filter-item">
+          <label>
+            <input
+              class="filter-radio"
+              type="radio"
+              name="filter"
+              value="all"
+            />
+            <span class="filter-active-btn">Все</span>
+          </label>
+        </li>
+        <li class="filter-item">
+          <label>
+            <input
+              class="filter-radio"
+              type="radio"
+              name="filter"
+              value="web-site"
+            />
+            <span class="filter-active-btn">Веб-сайты</span>
+          </label>
+        </li>
+        <li class="filter-item">
+          <label>
+            <input
+              class="filter-radio"
+              type="radio"
+              name="filter"
+              value="application"
+            />
+            <span class="filter-active-btn">Приложения</span>
+          </label>
+        </li>
+        <li class="filter-item">
+          <label>
+            <input
+              class="filter-radio"
+              type="radio"
+              name="filter"
+              value="design"
+            />
+            <span class="filter-active-btn">Дизайн</span>
+          </label>
+        </li>
+        <li class="filter-item">
+          <label>
+            <input
+              class="filter-radio"
+              type="radio"
+              name="filter"
+              value="marketing"
+            />
+            <span class="filter-active-btn">Маркетинг</span>
+          </label>
+        </li>
+      </ul>
+    </form>
     <script>
       (() => {
         document
