@@ -1,1 +1,6 @@
-@import './vars/vars';
+@import './utilities/vars';
+@import './base/normalize';
+body {
+  color: red;
+  background-color: #fff;
+}
