@@ -1,0 +1,10 @@
+.page-header {
+  background-color: $primaryBgColor;
+  border-bottom: 1px solid #ececec;
+  @extend %container;
+}
+
+.main-container,
+.nav {
+  @include centeredFlex(flex);
+}

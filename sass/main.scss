@@ -1,6 +1,7 @@
 @import './utilities/vars';
 @import './base/normalize';
-body {
-  color: red;
-  background-color: #fff;
-}
+@import './utilities/placeholder';
+@import './utilities/visually-hidden';
+@import './utilities/mixins';
+@import './utilities/body';
+@import './components/page-header';

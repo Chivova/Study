@@ -1,0 +1,24 @@
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+%link {
+  display: block;
+  text-decoration: none;
+
+  color: $tittleTextColor;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
