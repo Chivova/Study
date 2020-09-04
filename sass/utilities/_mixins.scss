@@ -1,3 +1,11 @@
 @mixin centeredFlex($type) {
   display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin positionAbsolute() {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
