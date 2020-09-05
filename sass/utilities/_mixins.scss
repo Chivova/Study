@@ -9,3 +9,8 @@
   left: 0;
   bottom: 0;
 }
+
+@mixin borderSizeColorRadius($size, $color, $radius) {
+  border: $size solid $color;
+  border-radius: $radius;
+}

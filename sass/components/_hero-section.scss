@@ -26,12 +26,15 @@
   letter-spacing: 0.06em;
 }
 
-.button {
+// .button {
+//   @include centeredFlex(inline-flex);
+//   @extend %button;
+// }
+
+.primary-button {
   @include centeredFlex(inline-flex);
   @extend %button;
-}
 
-.button.primary-button {
   background-color: $accentColor;
   color: $whiteTextColor;
   overflow: hidden;
