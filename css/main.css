@@ -270,16 +270,26 @@ summary {
   display: list-item;
 }
 
-.site-nav, .auth {
+.site-nav, .auth, .features-list, .employment {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.nav-link, .header-contact {
+.nav-link, .header-contact, .link {
   display: block;
   text-decoration: none;
   color: #212121;
+}
+
+.features-list, .employment {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-paragraph, .employment-subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .page-header {
@@ -468,7 +478,7 @@ body {
   text-align: center;
 }
 
-.hero-tittle {
+.hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
   padding-top: 200px;
@@ -571,7 +581,7 @@ body {
   margin-bottom: 28px;
 }
 
-.form-tittle {
+.form-title {
   margin: 0;
   margin-bottom: 30px;
   font-weight: 700;
@@ -687,5 +697,101 @@ body {
 
 .agreement-link {
   color: #2196f3;
+}
+
+.features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.section-subtitle {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.employment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.employment-list {
+  width: 370px;
+}
+
+.employment-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.employment-overley {
+  position: relative;
+}
+
+.employment-action {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.employment-subtitle {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

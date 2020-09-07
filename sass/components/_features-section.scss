@@ -1,0 +1,48 @@
+.features-list {
+  @extend %list;
+  @extend %section;
+
+  @include centeredFlex(flex);
+}
+
+.features-item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-icon {
+  @include centeredFlex(flex);
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: $secondaryBgColor;
+  border-radius: 4px;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $titleTextColor;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+.section-subtitle {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  color: $titleTextColor;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.features-paragraph {
+  @extend %paragraph;
+}

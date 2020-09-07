@@ -1,0 +1,7 @@
+.team-section {
+  background-color: $secondaryBgColor;
+}
+
+.ourteam-list {
+  @include centeredFlex(flex);
+}
