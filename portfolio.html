@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap"
@@ -15,7 +14,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
 
   <body>
@@ -29,23 +29,23 @@
           </a>
           <ul class="site-nav list">
             <li class="site-nav-item">
-              <a href="./index.html" class="link"> Студия </a>
+              <a href="./index.html" class="nav-link"> Студия </a>
             </li>
             <li class="site-nav-item">
-              <a href="" class="link current"> Портфолио </a>
-              <div class="border"></div>
+              <a href="./portfolio.html" class="nav-link current">
+                Портфолио
+              </a>
             </li>
             <li class="site-nav-item">
-              <a href="" class="link"> Контакты </a>
+              <a href="" class="nav-link"> Контакты </a>
             </li>
           </ul>
         </nav>
 
         <!-- Auth -->
         <ul class="auth list">
-          <!-- <li class="item icon-item icon-mail "> -->
           <li class="site-nav-item">
-            <a class="header-contact link" href="mailto:info@devstudio.com">
+            <a class="header-contact" href="mailto:info@devstudio.com">
               <svg class="contact-icon" width="16" height="11">
                 <use href="./images/sprite.svg#mail"></use>
               </svg>
@@ -53,7 +53,7 @@
             </a>
           </li>
           <li class="site-nav-item">
-            <a class="header-contact link" href="tel:+380961111111">
+            <a class="header-contact" href="tel:+380961111111">
               <svg class="contact-icon" width="10" height="15">
                 <use href="./images/sprite.svg#tel"></use>
               </svg>
@@ -69,10 +69,10 @@
       <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Фильтр</h1>
-          <ul class="filter-list list">
+          <ul class="filter-list">
             <li class="filter-item">
               <input
-                class="filter-radio"
+                class="filter-radio visually-hidden"
                 type="radio"
                 name="filter"
                 value="all"
@@ -83,7 +83,7 @@
             </li>
             <li class="filter-item">
               <input
-                class="filter-radio"
+                class="filter-radio visually-hidden"
                 type="radio"
                 name="filter"
                 value="web-site"
@@ -93,7 +93,7 @@
             </li>
             <li class="filter-item">
               <input
-                class="filter-radio"
+                class="filter-radio visually-hidden"
                 type="radio"
                 name="filter"
                 value="applications"
@@ -103,7 +103,7 @@
             </li>
             <li class="filter-item">
               <input
-                class="filter-radio"
+                class="filter-radio visually-hidden"
                 type="radio"
                 name="filter"
                 value="design"
@@ -113,7 +113,7 @@
             </li>
             <li class="filter-item">
               <input
-                class="filter-radio"
+                class="filter-radio visually-hidden"
                 type="radio"
                 name="filter"
                 value=" marketing"
@@ -126,7 +126,7 @@
           <!-- Проекты Projects -->
           <!-- Как сделать карточки на видео 1:22. Возможно не правильно сделал -->
           <h2 class="visually-hidden">Наши примеры работ</h2>
-          <ul class="examples list">
+          <ul class="examples">
             <li class="examples-item">
               <!-- <div class="card"> -->
               <a class="link" href="">
@@ -323,24 +323,24 @@
     <footer class="footer">
       <!--Как делать адресс-->
       <!-- Logo in Footer -->
-      <div class="footer-container flex-footer">
+      <div class="footer-container container">
         <address class="address">
           <a href="./index.html" class="logo inverse">
             Web <span class="logo-accent">Studio</span></a
           >
           <p class="address-street">г.Киев, пр-т Леси Украинки, 26</p>
 
-          <a class="address-mail link" href="mailto:info@devstudio.com"
+          <a class="address-mail" href="mailto:info@devstudio.com"
             >info@devstudio.com
           </a>
 
-          <a class="address-phone link" href="tel:+380961111111"
+          <a class="address-phone" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
         </address>
         <!--почему div на видео 2 43:00-->
         <div class="followus">
-          <b class="followus-tittle">ПРИСОЕДИНЯЙТЕСЬ</b>
+          <b class="followus-title">ПРИСОЕДИНЯЙТЕСЬ</b>
           <ul class="social-list list">
             <li class="social-item">
               <a class="followus-link" href="" aria-label="Сыылка на Instagram">
@@ -375,7 +375,7 @@
 
         <form class="footer-form">
           <div class="footer-form-group">
-            <label class="followus-tittle" for="email"
+            <label class="followus-title" for="email"
               >Подпишитесь на россылку</label
             >
             <input

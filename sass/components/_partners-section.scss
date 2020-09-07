@@ -1,6 +1,12 @@
-.partners-list {
+.partners-section {
   @extend %section;
+}
+
+.container {
   @extend %container;
+}
+
+.partners-list {
   @extend %list;
 
   @include centeredFlex(flex);

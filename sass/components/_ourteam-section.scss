@@ -1,10 +1,12 @@
 .team-section {
   @extend %section;
-  @extend %container;
 
   background-color: $secondary-bg-color;
 }
 
+.container {
+  @extend %container;
+}
 .ourteam-list {
   @extend %list;
   @include centeredFlex(flex);

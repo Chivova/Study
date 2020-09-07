@@ -1,7 +1,13 @@
+.section-features {
+  @extend %section;
+}
+
+.container {
+  @extend %container;
+}
+
 .features-list {
   @extend %list;
-  @extend %section;
-  @extend %container;
 
   @include centeredFlex(flex);
 }

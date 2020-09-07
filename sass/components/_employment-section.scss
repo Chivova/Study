@@ -1,7 +1,13 @@
-.employment {
+.section-employment {
   @extend %section;
-  @extend %list;
+}
+
+.container {
   @extend %container;
+}
+
+.employment {
+  @extend %list;
 
   @include centeredFlex(flex);
 }
