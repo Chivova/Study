@@ -1,0 +1,29 @@
+.partners-list {
+  @extend %section;
+  @extend %container;
+  @extend %list;
+
+  @include centeredFlex(flex);
+}
+
+.partners-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.partners {
+  @include centeredFlex(flex);
+  @include borderSizeColorRadius(1px, $icon-color, 4px);
+  width: 170px;
+  height: 90px;
+
+  fill: $icon-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 200ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}

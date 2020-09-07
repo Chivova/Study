@@ -7,17 +7,12 @@
   display: block;
   text-decoration: none;
 
-  color: $titleTextColor;
+  color: $title-text-color;
 }
 
 %section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-%paragraph {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 %container {
@@ -28,6 +23,11 @@
   padding-right: 15px;
 }
 
+%paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 %button {
   min-width: 200px;
   padding: 10px 32px;
@@ -35,8 +35,8 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  background-color: $whiteTextColor;
-  color: $titleTextColor;
+  background-color: $white-text-color;
+  color: $title-text-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;

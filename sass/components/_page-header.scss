@@ -1,6 +1,7 @@
 .page-header {
-  background-color: $primaryBgColor;
+  background-color: $primary-bg-color;
   border-bottom: 1px solid #ececec;
+
   @extend %container;
 }
 
@@ -12,7 +13,7 @@
 .logo {
   display: block;
 
-  color: $accentColor;
+  color: $accent-color;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -20,7 +21,7 @@
   text-decoration: none;
 
   & .logo-accent {
-    color: $titleTextColor;
+    color: $title-text-color;
   }
 }
 .nav > .logo {
@@ -47,10 +48,10 @@
 
   &:hover,
   &:focus {
-    color: $accentColor;
+    color: $accent-color;
   }
   & .current {
-    color: $accentColor;
+    color: $accent-color;
   }
 }
 
@@ -68,6 +69,6 @@
   width: 100%;
   height: 4px;
 
-  background-color: $accentColor;
+  background-color: $accent-color;
   border-radius: 2px;
 }

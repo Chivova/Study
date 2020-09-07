@@ -13,7 +13,7 @@
   text-align: center;
   line-height: 0.9;
 
-  color: $titleTextColor;
+  color: $title-text-color;
 }
 
 .form-field {
@@ -37,11 +37,11 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .form-group:focus-within > & {
-    color: $accentColor;
+    color: $accent-color;
     transform: translateY(-43px) translateX(-28px) scale(0.85);
   }
   .form-field:not(:placeholder-shown) + & {
-    fill: $accentColor;
+    fill: $accent-color;
     transform: translateY(-43px) translateX(-28px) scale(0.85);
   }
 }
@@ -54,7 +54,7 @@
   transform: translateY(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .form-group:focus-within > & {
-    fill: $accentColor;
+    fill: $accent-color;
   }
 }
 
@@ -76,7 +76,7 @@
   @import '../utilities/visually-hidden';
 
   &:checked + .form-chekbox-icon {
-    background-color: $accentColor;
+    background-color: $accent-color;
     background-image: url('../../images/full-check.svg');
     background-origin: border-box;
     background-size: contain;
@@ -92,10 +92,10 @@
   height: 15px;
   margin-right: 8px;
 
-  @include borderSizeColorRadius(2px, $titleTextColor, 2px);
+  @include borderSizeColorRadius(2px, $title-text-color, 2px);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agreement-link {
-  color: $accentColor;
+  color: $accent-color;
 }

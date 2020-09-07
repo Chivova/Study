@@ -9,7 +9,7 @@
     ),
     url('../../images/Header.jpg');
 
-  background-color: $heroBgColor;
+  background-color: $hero-bg-color;
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
   margin-bottom: 30px;
   padding-top: 200px;
 
-  color: $whiteTextColor;
+  color: $white-text-color;
 
   font-weight: 900;
   font-size: 44px;
@@ -35,7 +35,7 @@
   @include centeredFlex(inline-flex);
   @extend %button;
 
-  background-color: $accentColor;
-  color: $whiteTextColor;
+  background-color: $accent-color;
+  color: $white-text-color;
   overflow: hidden;
 }

@@ -11,8 +11,8 @@
   @include centeredFlex(flex);
   @extend %link;
 
-  color: $primaryTextColor;
-  fill: $primaryTextColor;
+  color: $primary-text-color;
+  fill: $primary-text-color;
 
   font-weight: 500;
   font-size: 14px;
@@ -23,8 +23,8 @@
 
   &:hover,
   &:focus {
-    fill: $accentColor;
-    color: $accentColor;
+    fill: $accent-color;
+    color: $accent-color;
   }
 }
 

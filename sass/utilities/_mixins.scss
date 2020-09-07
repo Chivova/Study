@@ -14,3 +14,15 @@
   border: $size solid $color;
   border-radius: $radius;
 }
+
+@mixin followUsLink($bg-color, $fill-color) {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  background-color: $bg-color;
+  fill: $fill-color;
+}

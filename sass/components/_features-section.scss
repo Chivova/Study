@@ -1,6 +1,7 @@
 .features-list {
   @extend %list;
   @extend %section;
+  @extend %container;
 
   @include centeredFlex(flex);
 }
@@ -18,7 +19,7 @@
   height: 120px;
   margin-bottom: 30px;
 
-  background-color: $secondaryBgColor;
+  background-color: $secondary-bg-color;
   border-radius: 4px;
 }
 
@@ -26,7 +27,7 @@
   margin-top: 0;
   margin-bottom: 50px;
 
-  color: $titleTextColor;
+  color: $title-text-color;
 
   font-weight: 700;
   font-size: 36px;
@@ -37,7 +38,7 @@
   margin-top: 0px;
   margin-bottom: 10px;
 
-  color: $titleTextColor;
+  color: $title-text-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

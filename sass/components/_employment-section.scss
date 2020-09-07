@@ -1,6 +1,7 @@
 .employment {
   @extend %section;
   @extend %list;
+  @extend %container;
 
   @include centeredFlex(flex);
 }
@@ -33,7 +34,7 @@
 .employment-subtitle {
   @extend %paragraph;
 
-  color: $whiteTextColor;
+  color: $white-text-color;
 
   font-size: 14px;
   line-height: 1.14;
