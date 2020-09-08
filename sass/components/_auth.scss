@@ -3,8 +3,7 @@
   @extend %list;
 
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include paddingTopBottom(32px, 32px);
 }
 
 .header-contact {

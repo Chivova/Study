@@ -1,12 +1,12 @@
 // Форма
 .form-group {
   position: relative;
-  margin-bottom: 28px;
+  @include marginTopBottom(0, 28px);
 }
 
 .form-title {
   margin: 0;
-  margin-bottom: 30px;
+  @include marginTopBottom(0, 30px);
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -69,7 +69,7 @@
 .form-confidentia {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  @include marginTopBottom(0, 30px);
 }
 
 .form-checkbox {

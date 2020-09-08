@@ -4,8 +4,8 @@
   justify-content: center;
 }
 
-@mixin positionAbsolute() {
-  position: absolute;
+@mixin positionAbsolute($type) {
+  position: $type;
   left: 0;
   bottom: 0;
 }
@@ -25,4 +25,14 @@
 
   background-color: $bg-color;
   fill: $fill-color;
+}
+
+@mixin marginTopBottom($tvalue, $bvalue) {
+  margin-top: $tvalue;
+  margin-bottom: $bvalue;
+}
+
+@mixin paddingTopBottom($tvalue, $bvalue) {
+  padding-top: $tvalue;
+  padding-bottom: $bvalue;
 }

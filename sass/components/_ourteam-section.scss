@@ -14,7 +14,7 @@
 
 .ourteam-item {
   width: 270px;
-  padding-bottom: 24px;
+  @include paddingTopBottom(0, 24px);
   perspective: 400px;
 
   background-color: $primary-bg-color;
@@ -28,7 +28,7 @@
 }
 
 .img-item {
-  padding-bottom: 30px;
+  @include paddingTopBottom(0, 30px);
   transform: rotateY(0);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   .ourteam-item:hover & {
@@ -37,8 +37,7 @@
 }
 
 .name-title {
-  margin-top: 0px;
-  margin-bottom: 10px;
+  @include marginTopBottom(0, 10px);
 
   color: $title-text-color;
 
@@ -49,8 +48,8 @@
 }
 
 .job-position {
-  margin-top: 0;
-  margin-bottom: 16px;
+  @include marginTopBottom(0, 16px);
+
   font-size: 16px;
   line-height: 1.2;
   text-align: center;

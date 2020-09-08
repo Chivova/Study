@@ -51,7 +51,7 @@
 
   @include centeredFlex(inline-flex);
 
-  margin-top: 8px;
+  @include marginTopBottom(8px, 0);
   margin-right: 8px;
 
   width: 30px;

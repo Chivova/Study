@@ -14,8 +14,7 @@
 }
 
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
+  @include marginTopBottom(0, 30px);
   padding-top: 200px;
 
   color: $white-text-color;
@@ -26,10 +25,7 @@
   letter-spacing: 0.06em;
 }
 
-// .button {
-//   @include centeredFlex(inline-flex);
-//   @extend %button;
-// }
+// .button
 
 .primary-button {
   @include centeredFlex(inline-flex);
