@@ -1,0 +1,38 @@
+@mixin centeredFlex($type) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin positionAbsolute($type) {
+  position: $type;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin borderSizeColorRadius($size, $color, $radius) {
+  border: $size solid $color;
+  border-radius: $radius;
+}
+
+@mixin followUsLink($bg-color, $fill-color) {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  background-color: $bg-color;
+  fill: $fill-color;
+}
+
+@mixin marginTopBottom($tvalue, $bvalue) {
+  margin-top: $tvalue;
+  margin-bottom: $bvalue;
+}
+
+@mixin paddingTopBottom($tvalue, $bvalue) {
+  padding-top: $tvalue;
+  padding-bottom: $bvalue;
+}

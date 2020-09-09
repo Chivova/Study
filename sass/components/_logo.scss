@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+
+  color: $accent-color;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  & .logo-accent {
+    color: $title-text-color;
+  }
+}
