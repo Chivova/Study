@@ -1,13 +1,46 @@
 .features-list {
   @extend %list;
+
+  @media screen and (min-width: 480px) {
+    @include centeredFlex(flex);
+  }
 }
 
-.section-title,
 .features-item {
-  @include marginTopBottom(0, 30px);
+  width: 100%;
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
 }
 
-.section-subtitle,
-.features-paragraph {
+.features-icon {
+  @include centeredFlex(flex);
+  height: 120px;
+  @include marginTopBottom(0, 30px);
+
+  background-color: $secondary-bg-color;
+  border-radius: 4px;
+}
+
+.section-subtitle {
   @include marginTopBottom(0, 10px);
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
+}
+
+.features-paragraph {
+  @include marginTopBottom(0, 0);
 }

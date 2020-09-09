@@ -1,4 +1,25 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include paddingTopBottom(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include paddingTopBottom(94px, 94px);
+  }
+}
+
+.section-title {
+  @include marginTopBottom(0, 30px);
+
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    @include marginTopBottom(0, 50px);
+
+    font-size: 36px;
+    line-height: 1.2;
+  }
 }
