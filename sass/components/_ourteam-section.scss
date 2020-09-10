@@ -1,0 +1,99 @@
+.team-section {
+  background-color: $secondary-bg-color;
+}
+
+.link {
+  @extend %link;
+}
+
+.ourteam-list {
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.ourteam-item {
+  padding-bottom: 24px;
+  perspective: 400px;
+
+  background-color: $primary-bg-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+  }
+
+  &:hover .img-item {
+    transform: rotateY(180deg);
+  }
+}
+
+.img-item {
+  @extend %link;
+
+  width: 100%;
+  padding-bottom: 30px;
+  transform: rotateY(0);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.name-title {
+  @include marginTopBottom(0, 10px);
+
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
+
+.job-position {
+  @include marginTopBottom(0, 16px);
+
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.social-list {
+  @extend %list;
+  @include centeredFlex(flex);
+}
+
+.social-link {
+  @include centeredFlex(flex);
+  @include followUsLink($white-text-color, $icon-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $white-text-color;
+    }
+  }
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}

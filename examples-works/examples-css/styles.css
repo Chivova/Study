@@ -546,15 +546,15 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Чем мы занимаемся */
 
-.employment {
+.employment-list {
   display: flex;
 }
 
-.employment-list {
+.employment-item {
   width: 370px;
 }
 
-.employment-list:not(:last-child) {
+.employment-item:not(:last-child) {
   margin-right: 30px;
 }
 
