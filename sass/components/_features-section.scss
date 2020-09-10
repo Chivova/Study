@@ -1,22 +1,30 @@
 .features-list {
   @extend %list;
 
-  @media screen and (min-width: 480px) {
-    @include centeredFlex(flex);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 .features-item {
-  width: 100%;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 480px) {
-    width: calc((100% - 30px) / 2);
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  // либо : flex-basis: calc((100% - 4 * 15px) / 2);
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
   }
 }
 
@@ -36,7 +44,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 }
