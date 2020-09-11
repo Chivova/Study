@@ -395,8 +395,8 @@ body {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../../images/Header.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../../images/Header.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/Header.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/Header.jpg");
   background-color: #2f303a;
   text-align: center;
 }
@@ -623,7 +623,7 @@ body {
 
 .form-checkbox:checked + .form-chekbox-icon {
   background-color: #2196f3;
-  background-image: url("../../images/full-check.svg");
+  background-image: url("../images/full-check.svg");
   background-origin: border-box;
   background-size: contain;
   border-color: transparent;
