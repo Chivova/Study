@@ -359,6 +359,11 @@ body {
   color: #212121;
 }
 
+.page-header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +395,27 @@ body {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-container {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 140px;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.menu-container.is-open {
+  opacity: 1;
+}
+
+.menu-container.is-hidden {
+  pointer-events: none;
 }
 
 .section {
@@ -478,6 +504,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 94px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 1;
