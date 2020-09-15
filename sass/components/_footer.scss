@@ -1,10 +1,16 @@
+.footer {
+  background-color: $footer-bg-color;
+}
+
 .footer-container {
   @include paddingTopBottom(60px, 60px);
 
-  background-color: $footer-bg-color;
-
   @media screen and (max-width: 767px) {
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -59,7 +65,7 @@
     @include marginTopBottom(0, 60px);
   }
   @media screen and (max-width: 1199px) {
-    margin-right: auto;
+    margin-left: auto;
   }
 }
 .followus-title {
@@ -90,18 +96,26 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+.footer-form {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .footer-form-field {
   @media screen and (max-width: 767px) {
     width: 100%;
   }
   @media screen and (min-width: 768px) {
     width: 450px;
+    display: block;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
+    margin-right: 12px;
   }
   padding: 15px 16px;
-  //   margin-right: 12px;
   margin-bottom: 20px;
 
   font-size: 16px;
