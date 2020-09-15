@@ -124,10 +124,6 @@ body {
   display: flex;
 }
 
-.site-nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 /* Old School
 .site-nav .item + .item {
   margin-left: 50px;
