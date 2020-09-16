@@ -100,7 +100,7 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     max-width: 450px;
     width: 100%;
@@ -109,7 +109,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    top: 50%;
+    top: 80%;
     max-width: 528px;
     transform: translate(-50%, -50%);
   }
