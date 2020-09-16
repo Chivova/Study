@@ -12,11 +12,4 @@
   & .logo-accent {
     color: $title-text-color;
   }
-
-  @media screen and (min-width: 768px) {
-    margin-right: 80px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-right: 85px;
-  }
 }
