@@ -8,21 +8,19 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
 
-.menu-button .icon-close {
-  // display: none;
-  opacity: 0;
-}
-
-.menu-button.is-open .icon-close {
-  // display: block;
-  opacity: 1;
-}
-
-.menu-button.is-open .icon-menu {
-  // display: none;
-  opacity: 0;
+  & .icon-close {
+    // display: none;
+    opacity: 0;
+  }
+  &.is-open .icon-close {
+    // display: block;
+    opacity: 1;
+  }
+  &.is-open .icon-menu {
+    // display: none;
+    opacity: 0;
+  }
 }
 
 .icon-close,

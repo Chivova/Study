@@ -393,6 +393,12 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -408,11 +414,8 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
-  .site-nav-item {
+  .site-nav-item:not(:last-child) {
     margin-bottom: 40px;
-  }
-  .site-nav-item:last-child {
-    margin-bottom: 60px;
   }
 }
 
@@ -920,7 +923,7 @@ body.modal-open {
 @media screen and (max-width: 1199px) {
   .form-confidentia {
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.2;
   }
 }
 

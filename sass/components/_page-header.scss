@@ -21,6 +21,9 @@
 
 .site-nav {
   @extend %list;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     @include centeredFlex(flex);
   }
@@ -28,11 +31,11 @@
 
 .site-nav-item {
   @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
-    &:last-child {
-      margin-bottom: 60px;
+    &:not(:last-child) {
+      margin-bottom: 40px;
     }
   }
+
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-right: 50px;
