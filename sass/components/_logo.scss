@@ -13,3 +13,12 @@
     color: $title-text-color;
   }
 }
+
+// Footer logo
+.logo.inverse {
+  @include marginTopBottom(0, 20px);
+
+  & .logo-accent {
+    color: $white-text-color;
+  }
+}

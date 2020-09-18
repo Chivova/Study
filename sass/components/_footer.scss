@@ -25,16 +25,10 @@
   }
 }
 
+// Адрес
+
 .address {
   font-style: normal;
-}
-
-.address .logo {
-  @include marginTopBottom(0, 20px);
-
-  &.inverse .logo-accent {
-    color: $white-text-color;
-  }
 }
 
 .address-street {
@@ -101,6 +95,8 @@
   }
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
+
+// Форма в footer
 
 .footer-form {
   @media screen and (max-width: 1199px) {

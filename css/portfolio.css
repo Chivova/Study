@@ -374,6 +374,15 @@ body.modal-open {
   color: #212121;
 }
 
+.logo.inverse {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.logo.inverse .logo-accent {
+  color: #ffffff;
+}
+
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -920,15 +929,6 @@ body.modal-open {
 
 .address {
   font-style: normal;
-}
-
-.address .logo {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.address .logo.inverse .logo-accent {
-  color: #ffffff;
 }
 
 .address-street {

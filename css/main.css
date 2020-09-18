@@ -362,6 +362,15 @@ body.modal-open {
   color: #212121;
 }
 
+.logo.inverse {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.logo.inverse .logo-accent {
+  color: #ffffff;
+}
+
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -727,7 +736,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-/* Backdrop */
 .backdrop {
   position: fixed;
   top: 0;
@@ -833,6 +841,26 @@ body.modal-open {
 
 .btn-close:hover, .btn-close:focus {
   fill: #2196f3;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 609px;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .form-group {
@@ -955,6 +983,21 @@ body.modal-open {
 
 .agreement-link {
   color: #2196f3;
+}
+
+.primary-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2196f3;
+  color: #ffffff;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -1298,15 +1341,6 @@ body.modal-open {
 
 .address {
   font-style: normal;
-}
-
-.address .logo {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.address .logo.inverse .logo-accent {
-  color: #ffffff;
 }
 
 .address-street {
