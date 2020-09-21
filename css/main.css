@@ -1172,6 +1172,7 @@ body.modal-open {
 
 .img-item {
   width: 100%;
+  height: auto;
   padding-bottom: 30px;
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
