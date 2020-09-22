@@ -33,7 +33,11 @@
 }
 
 .link {
-  @extend %link;
+  // @extend %link;
+  display: flex;
+  flex-direction: column;
+  // flex-grow: 1;
+  height: 100%;
 }
 
 .examples-thumb {
@@ -80,6 +84,9 @@
 
 // ?????????????????????????????
 .card-content {
+  // display: flex;
+  // flex-direction: column;
+  flex-grow: 1;
   width: 100%;
   padding: 20px 24px;
 
