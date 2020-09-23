@@ -4,11 +4,6 @@
 
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url('../images/hero/mobile/mobile.jpg');
 
   background-color: #2f303a;
   text-align: center;
@@ -17,35 +12,98 @@
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    
-    // Для background-size
-//     Width 768px
-// Height 400px
-
+    background-size: 768px 400px;
+  }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
-
-//     Width 1 600px
-// Height 600px
+    background-size: 1600px 600px;
   }
 }
 
-@media (min-resolution: 2dppx) {
+@media (max-width: 479px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
       ),
-      url('../images/hero/mobile/mobile@2x.jpg');
+      url('../images/hero/mobile/mobile.jpg');
   }
-  @media (min-resolution: 3dppx) {
+
+  @media (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
         ),
-        url('../images/hero/mobile/mobile@3x.jpg');
+        url('../images/hero/mobile/mobile@2x.jpg');
+    }
+    @media (min-resolution: 3dppx) {
+      .hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.8),
+            rgba(47, 48, 58, 0.8)
+          ),
+          url('../images/hero/mobile/mobile@3x.jpg');
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url('../images/hero/tablet/tablet.jpg');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url('../images/hero/tablet/tablet@2x.jpg');
+    }
+    @media (min-resolution: 3dppx) {
+      .hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.8),
+            rgba(47, 48, 58, 0.8)
+          ),
+          url('../images/hero/tablet/tablet@3x.jpg');
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url('../images/hero/desktop/desktop.jpg');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url('../images/hero/desktop/desktop@2x.jpg');
+    }
+    @media (min-resolution: 3dppx) {
+      .hero {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.8),
+            rgba(47, 48, 58, 0.8)
+          ),
+          url('../images/hero/desktop/desktop@3x.jpg');
+      }
     }
   }
 }
