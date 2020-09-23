@@ -1,0 +1,124 @@
+// Форма
+.form-group {
+  position: relative;
+  @include marginTopBottom(0, 28px);
+}
+
+.form-title {
+  margin: 0;
+  @include marginTopBottom(0, 30px);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  line-height: 0.9;
+
+  color: $title-text-color;
+}
+
+.form-field {
+  display: inline-flex;
+  width: 100%;
+  padding: 12px 19px;
+  padding-left: 42px;
+
+  @include borderSizeColorRadius(2px, rgba(33, 33, 33, 0.2), 4px);
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-group:focus-within > & {
+    color: $accent-color;
+    transform: translateY(-43px) translateX(-28px) scale(0.85);
+  }
+  .form-field:not(:placeholder-shown) + & {
+    fill: $accent-color;
+    transform: translateY(-43px) translateX(-28px) scale(0.85);
+  }
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .form-group:focus-within > & {
+    fill: $accent-color;
+  }
+}
+
+.form-comment {
+  padding: 12px 16px;
+  width: 100%;
+  resize: none;
+
+  @include borderSizeColorRadius(2px, rgba(33, 33, 33, 0.2), 4px);
+}
+
+.form-confidentia {
+  // что бы текст стал в одну строку до 480px flex не подходит
+  display: inline-block;
+  text-align: left;
+  @include marginTopBottom(0, 30px);
+
+  // fix текста в одну строку в label
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
+
+.form-checkbox {
+  &:checked + .form-chekbox-icon {
+    background-color: $accent-color;
+    background-image: url('../images/full-check.svg');
+    background-origin: border-box;
+    background-size: contain;
+    border-color: transparent;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.form-chekbox-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  @include borderSizeColorRadius(2px, $title-text-color, 2px);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 480px) {
+    vertical-align: bottom;
+  }
+}
+
+.agreement-link {
+  color: $accent-color;
+}
+
+.primary-button {
+  @include centeredFlex(inline-flex);
+  @extend %button;
+
+  background-color: $accent-color;
+  color: $white-text-color;
+  overflow: hidden;
+}

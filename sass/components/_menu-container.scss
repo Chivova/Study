@@ -9,22 +9,40 @@
     display: none;
   }
 
-  & .icon-close {
+// ????????????????????????????????????????????????????????????????????
+
+  & .icon-menu {
     // display: none;
     opacity: 0;
   }
-  &.is-open .icon-close {
+
+  &.is-open .icon-menu {
     // display: block;
     opacity: 1;
   }
-  &.is-open .icon-menu {
+
+  &.is-open .icon-close {
     // display: none;
     opacity: 0;
   }
+
+  // & .icon-close {
+  //   // display: none;
+  //   opacity: 0;
+  // }
+
+  // &.is-open .icon-close {
+  //   // display: block;
+  //   opacity: 1;
+  // }
+
+  // &.is-open .icon-menu {
+  //   // display: none;
+  //   opacity: 0;
+  // }
 }
 
-.icon-close,
-.icon-menu {
+.icon-close {
   &:hover,
   &:focus {
     fill: $accent-color;

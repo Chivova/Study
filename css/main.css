@@ -587,21 +587,19 @@ body.modal-open {
   }
 }
 
-.menu-button .icon-close {
+.menu-button .icon-menu {
   opacity: 0;
-}
-
-.menu-button.is-open .icon-close {
-  opacity: 1;
 }
 
 .menu-button.is-open .icon-menu {
+  opacity: 1;
+}
+
+.menu-button.is-open .icon-close {
   opacity: 0;
 }
 
-.icon-close:hover, .icon-close:focus,
-.icon-menu:hover,
-.icon-menu:focus {
+.icon-close:hover, .icon-close:focus {
   fill: #2196f3;
 }
 
@@ -992,14 +990,21 @@ body.modal-open {
 }
 
 .form-confidentia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .form-confidentia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1020,7 +1025,9 @@ body.modal-open {
 }
 
 .form-chekbox-icon {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -1028,6 +1035,12 @@ body.modal-open {
   border-radius: 2px;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 480px) {
+  .form-chekbox-icon {
+    vertical-align: bottom;
+  }
 }
 
 .agreement-link {
