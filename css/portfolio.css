@@ -748,9 +748,21 @@ body.modal-open {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .filter-item:nth-last-child(n + 3) {
+@media screen and (max-width: 390px) {
+  .filter-item:nth-child(-n + 4) {
     margin-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 391px) {
+  .filter-item:nth-child(-n + 3) {
+    margin-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-item:nth-child(-n + 3) {
+    margin-bottom: 0;
   }
 }
 
