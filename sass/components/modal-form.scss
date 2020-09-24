@@ -63,6 +63,7 @@
   width: 100%;
   resize: none;
 
+  @include marginTopBottom(0, 20px);
   @include borderSizeColorRadius(2px, rgba(33, 33, 33, 0.2), 4px);
 }
 
