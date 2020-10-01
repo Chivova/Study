@@ -75,6 +75,9 @@
   text-align: left;
   @include marginTopBottom(0, 30px);
 
+  font-size: 12px;
+  line-height: 1.16;
+
   // // fix текста в одну строку в label
   // @media screen and (min-width: 480px) {
   //   display: flex;
